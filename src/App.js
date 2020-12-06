@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactGA from 'react-ga';
+import {Waypoint} from 'react-waypoint';
 
 import './App.css';
 import Header from './Components/Header';
@@ -19,6 +20,7 @@ const fetchConfig = async () => {
 
 const App = () => {
   const [config, setConfig] = React.useState({});
+  const [section, setSection] = React.useState("home");
 
   React.useEffect(() => {
     ReactGA.pageview(window.location.pathname);
@@ -26,15 +28,39 @@ const App = () => {
       .then(r => setConfig(r));
   }, []);
 
-    return (
-      <div className="App">
-        <Header data={config.main}/>
-        {config.main && <About data={config.main}/>}
-        {config.resume && <Resume data={config.resume}/>}
-        {config.portfolio && <Portfolio data={config.portfolio}/>}
-        {config.main && <Footer data={config.main}/>}
-      </div>
-    );
+  return (
+    <div className="App">
+      <Header data={config.main} section={section}/>
+      <Waypoint onEnter={({previousPosition}) => {
+        if (previousPosition === Waypoint.above) {
+          setSection("home");
+        }
+        if (previousPosition === Waypoint.below) {
+          setSection("about");
+        }
+      }} topOffset="40%" bottomOffset="40%"/>
+      <About data={config.main}/>
+      <Waypoint onEnter={({previousPosition}) => {
+        if (previousPosition === Waypoint.above) {
+          setSection("about");
+        }
+        if (previousPosition === Waypoint.below) {
+          setSection("resume");
+        }
+      }} topOffset="40%" bottomOffset="50%"/>
+      <Resume data={config.resume}/>
+      <Waypoint onEnter={({previousPosition}) => {
+        if (previousPosition === Waypoint.above) {
+          setSection("resume");
+        }
+        if (previousPosition === Waypoint.below) {
+          setSection("portfolio");
+        }
+      }} topOffset="65%" bottomOffset="10%" debug="true"/>
+      <Portfolio data={config.portfolio}/>
+      {config.main && <Footer data={config.main}/>}
+    </div>
+  );
 }
 
 export default App;
