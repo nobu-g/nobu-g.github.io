@@ -56,9 +56,9 @@ const App = () => {
         if (previousPosition === Waypoint.below) {
           setSection("portfolio");
         }
-      }} topOffset="65%" bottomOffset="10%" debug="true"/>
+      }} topOffset="65%" bottomOffset="10%"/>
       <Portfolio data={config.portfolio}/>
-      {config.main && <Footer data={config.main}/>}
+      <Footer data={config.main}/>
     </div>
   );
 }

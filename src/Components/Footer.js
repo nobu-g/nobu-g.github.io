@@ -2,13 +2,15 @@ import React from 'react';
 
 const Footer = (props) => {
 
-  const networks = props.data.social.map(function (network) {
-    return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
-  })
+  let networks = null;
+  if (props.data) {
+    networks = props.data.social.map(function (network) {
+      return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
+    })
+  }
 
   return (
     <footer>
-
       <div className="row">
         <div className="twelve columns">
           <ul className="social-links">
