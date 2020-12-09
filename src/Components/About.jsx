@@ -33,9 +33,9 @@ const About = (props) => {
             <a
               href="https://lotus.kuee.kyoto-u.ac.jp/~ueda/demo/bert-pas-analysis-demo/"
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
             >
-              our Japanese anaphora resolution demo{" "}
+              our Japanese anaphora resolution demo
             </a>
             .
           </p>
