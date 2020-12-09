@@ -1,11 +1,8 @@
-import React from 'react';
+import React from "react";
 
 const About = (props) => {
   if (!props.data) {
-    return (
-      <section id="about">
-      </section>
-    );
+    return <section id="about"></section>;
   }
   const name = props.data.name;
   const profilePic = "images/" + props.data.image;
@@ -19,26 +16,41 @@ const About = (props) => {
     <section id="about">
       <div className="row">
         <div className="three columns">
-          <img className="profile-pic" src={profilePic} alt="Nobuhiro Ueda Profile Pic"/>
+          <img
+            className="profile-pic"
+            src={profilePic}
+            alt="Nobuhiro Ueda Profile Pic"
+          />
         </div>
         <div className="nine columns main-col">
           <h2>About Me</h2>
 
           <p>
-            I am a master student and a Ph.D. candidate at Kurohashi-Chu-Murawaki Lab., Kyoto University.
-            I'm interested in how we can make computers understand natural language.
-            Currently, I'm working on a research about anaphora resolution in Japanese.
-            Try <a href="https://lotus.kuee.kyoto-u.ac.jp/~ueda/demo/bert-pas-analysis-demo/" target="_blank" rel="noreferrer">
-            our Japanese anaphora resolution demo </a>.
+            I am a master student and a Ph.D. candidate at
+            Kurohashi-Chu-Murawaki Lab., Kyoto University. I'm interested in how
+            we can make computers understand natural language. Currently, I'm
+            working on a research about anaphora resolution in Japanese. Try{" "}
+            <a
+              href="https://lotus.kuee.kyoto-u.ac.jp/~ueda/demo/bert-pas-analysis-demo/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              our Japanese anaphora resolution demo{" "}
+            </a>
+            .
           </p>
           <div className="row">
             <div className="columns contact-details">
               <h2>Contact Details</h2>
               <p className="address">
-                <span>{name}</span><br/>
-                <span>Kurohashi-Chu-Murawaki Lab.<br/>
+                <span>{name}</span>
+                <br />
+                <span>
+                  Kurohashi-Chu-Murawaki Lab.
+                  <br />
                   Yoshida-honmachi, Sakyo-ku, Kyoto, 606-8501, Japan
-                   </span><br/>
+                </span>
+                <br />
                 {/*<span>{phone}</span><br/>*/}
                 <span>{email}</span>
               </p>
@@ -46,9 +58,8 @@ const About = (props) => {
           </div>
         </div>
       </div>
-
     </section>
   );
-}
+};
 
 export default About;
