@@ -234,7 +234,7 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
 /* ------------------------------------------------------------------ */
-
+/* 
 #resume {
    background: #fff;
    padding-top: 90px;
@@ -279,12 +279,12 @@ ul#nav li.current a { color: #F06000; }
 #resume .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
-}
+} */
 
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
-
+/* 
 .bars {
 	width: 95%;
 	float: left;
@@ -323,7 +323,7 @@ ul#nav li.current a { color: #F06000; }
   	height: 42px;
    line-height: 42px;
    border-radius: 3px 0 0 3px;
-}
+} */
 /*
 .git {
   	-moz-animation: git 2s ease;

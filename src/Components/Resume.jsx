@@ -1,5 +1,7 @@
 import React from "react";
 
+import style from "./Resume.module.css";
+
 const Resume = (props) => {
   let education = null;
   let publications = null;
@@ -10,9 +12,9 @@ const Resume = (props) => {
       return (
         <div key={education.school}>
           <h3>{education.school}</h3>
-          <p className="info">
+          <p className={style.info}>
             {education.degree} <span>&bull;</span>
-            <em className="date">{education.graduated}</em>
+            <em className={style.date}>{education.graduated}</em>
           </p>
           <p>{education.description}</p>
         </div>
@@ -27,6 +29,12 @@ const Resume = (props) => {
             {publication.author}
             <br />
             {publication.misc}
+            <br />
+            {Object.entries(publication.resource).map(([kind, url]) => (
+              <span key={kind}>
+              [<a href={url}>{kind}</a>]
+              </span>
+            ))}
           </p>
         </div>
       );
@@ -36,9 +44,9 @@ const Resume = (props) => {
       return (
         <li key={ta.title}>
           <h4>{ta.title}</h4>
-          <p>
+          <p className={style.info}>
             {ta.place}
-            <span>&bull;</span> <em className="date">{ta.years}</em>
+            <span>&bull;</span> <em className={style.date}>{ta.years}</em>
           </p>
           <p>{ta.description}</p>
         </li>
@@ -49,9 +57,9 @@ const Resume = (props) => {
       return (
         <li key={intern.company}>
           <h4>{intern.company}</h4>
-          <p>
+          <p className={style.info}>
             {intern.place}
-            <span>&bull;</span> <em className="date">{intern.years}</em>
+            <span>&bull;</span> <em className={style.date}>{intern.years}</em>
           </p>
           <p>{intern.description}</p>
         </li>
@@ -82,42 +90,42 @@ const Resume = (props) => {
   // })
 
   return (
-    <section id="resume">
-      <div className="row education">
-        <div className="three columns header-col">
+    <section id="resume" className={style.resume}>
+      <div className={"row " + style.education}>
+        <div className={"three columns " + style["header-col"]}>
           <h1>
             <span>Education</span>
           </h1>
         </div>
 
-        <div className="nine columns main-col">
+        <div className={"nine columns " + style["main-col"]}>
           <div className="row item">
             <div className="twelve columns">{education}</div>
           </div>
         </div>
       </div>
 
-      <div className="row publications">
-        <div className="three columns header-col">
+      <div className={"row " + style.publication}>
+        <div className={"three columns " + style["header-col"]}>
           <h1>
             <span>Publications</span>
           </h1>
         </div>
 
-        <div className="nine columns main-col">
+        <div className={"nine columns " + style["main-col"]}>
           <div className="row item">
             <div className="twelve columns">{publications}</div>
           </div>
         </div>
       </div>
 
-      <div className="row experience">
-        <div className="three columns header-col">
+      <div className={"row " + style.experience}>
+        <div className={"three columns " + style["header-col"]}>
           <h1>
             <span>Experience</span>
           </h1>
         </div>
-        <div className="nine columns main-col">{experience}</div>
+        <div className={"nine columns " + style["main-col"]}>{experience}</div>
       </div>
 
       {/*<div className="row skill">*/}
