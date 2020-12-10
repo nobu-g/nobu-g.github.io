@@ -92,14 +92,17 @@
           "company": "M3, Inc.",
           "place": "Akasaka Intercity, Tokyo",
           "years": "September 2019",
-          "description": "Worked on improving recommendation system"
+          "description": "Worked on improving recommendation system",
+          "resource": {}
         },
         {
           "company": "LINE",
           "place": "LINE KYOTO, Kyoto",
           "years": "August 2019",
           "description": "Joined a hackathon to develop an application like Akinator, which runs on LINE",
-          "report": "https://engineering.linecorp.com/ja/blog/kyoto-intern2019/"
+          "resource": {
+            "report": "https://engineering.linecorp.com/ja/blog/kyoto-intern2019/"
+          }
         }
       ]
     },

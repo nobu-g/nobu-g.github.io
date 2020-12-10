@@ -32,7 +32,7 @@ const Resume = (props) => {
             <br />
             {Object.entries(publication.resource).map(([kind, url]) => (
               <span key={kind}>
-              [<a href={url}>{kind}</a>]
+                [<a href={url}>{kind}</a>]
               </span>
             ))}
           </p>
@@ -60,8 +60,15 @@ const Resume = (props) => {
           <p className={style.info}>
             {intern.place}
             <span>&bull;</span> <em className={style.date}>{intern.years}</em>
+            <br />
+            {intern.description}
+            <br />
+            {Object.entries(intern.resource).map(([kind, url]) => (
+              <span key={kind}>
+                [<a href={url}>{kind}</a>]
+              </span>
+            ))}
           </p>
-          <p>{intern.description}</p>
         </li>
       );
     });
