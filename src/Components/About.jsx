@@ -31,7 +31,7 @@ const About = (props) => {
             we can make computers understand natural language. Currently, I'm
             working on a research about anaphora resolution in Japanese. Try{" "}
             <a
-              href="https://lotus.kuee.kyoto-u.ac.jp/~ueda/demo/bert-pas-analysis-demo/"
+              href="https://lotus.kuee.kyoto-u.ac.jp/cohesion-analysis/public/"
               target="_blank"
               rel="noreferrer noopener"
             >
