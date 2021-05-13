@@ -58,16 +58,39 @@
         }
       },
       {
+        "author": "Akiko Aizawa, Frederic Bergeron, Junjie Chen, Fei Cheng, Katsuhiko Hayashi, Kentaro Inui, Hiroyoshi Ito, Daisuke Kawahara, Masaru Kitsuregawa, Hirokazu Kiyomaru, Masaki Kobayashi, Takashi Kodama, Sadao Kurohashi, Qianying Liu, Masaki Matsubara, Yusuke Miyao, Atsuyuki Morishima, Yugo Murawaki, Kazumasa Omura, Haiyue Song, Eiichiro Sumita, Shinji Suzuki, Ribeka Tanaka, Yu Tanaka, Masashi Toyoda, Nobuhiro Ueda, Honai Ueoka, Masao Utiyama, Ying Zhong",
+        "title": "A System for Worldwide COVID-19 Information Aggregation",
+        "misc": "Proceedings of the 1st Workshop on NLP for COVID-19 (Part 2) at EMNLP 2020, Online, (2020.12)",
+        "resource": {
+          "paper": "/pub/EMNLPWS2020.pdf",
+          "url": " https://lotus.kuee.kyoto-u.ac.jp/NLPforCOVID-19/en"
+        }
+      },
+      {
         "author": "植田 暢大, 河原 大輔, 黒橋 禎夫",
         "title": "BERTとRefinementネットワークによる統合的照応・共参照解析",
         "misc": "言語処理学会 第26回年次大会, 茨城, (2020.3).",
         "resource": {
-          "paper": "/pub/NLP2020.pdf"
+          "paper": "/pub/NLP2020a.pdf"
+        }
+      },
+      {
+        "author": "清丸 寛一, 植田 暢大, 児玉 貴志, 田中 佑, 岸本 裕大, 田中 リベカ, 河原 大輔, 黒橋 禎夫",
+        "title": "因果関係グラフ: 構造的言語処理に基づくイベントの原因・結果・解決策の集約",
+        "misc": "言語処理学会 第26回年次大会, 茨城, (2020.3).",
+        "resource": {
+          "paper": "/pub/NLP2020b.pdf"
         }
       }
     ],
     "experience": {
       "teaching assistant": [
+        {
+          "title": "C Programming Class",
+          "place": "Kyoto University, Kyoto",
+          "years": "April 2021 - July 2021",
+          "description": ""
+        },
         {
           "title": "「人を知る」人工知能講座2020",
           "place": "Online",
@@ -106,6 +129,12 @@
         }
       ]
     },
+    "honors": [
+      {
+        "name": "Informatics, AI, and Data Science Fellowship for Doctoral Talent",
+        "years": "April 2021 - March 2024"
+      }
+    ],
     "skills": [
       {
         "name": "Git",
