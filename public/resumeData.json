@@ -72,6 +72,10 @@
         "misc": "言語処理学会 第26回年次大会, 茨城, (2020.3).",
         "resource": {
           "paper": "/pub/NLP2020a.pdf"
+        },
+        "award": {
+          "name": "若手奨励賞",
+          "image": "/images/award.png"
         }
       },
       {
