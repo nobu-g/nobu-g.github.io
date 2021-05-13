@@ -27,17 +27,34 @@
   <body>
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <div id="root"></div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
-      window.jQuery ||
-        document.write('<script src="js/jquery-1.10.2.min.js"><\/script>');
-    </script>
-    <script
-      type="text/javascript"
-      src="js/jquery-migrate-1.2.1.min.js"
-    ></script>
+jQuery(document).ready(function ($) {
 
-    <script src="js/init.js"></script>
+
+  /*----------------------------------------------------*/
+  /*	Fade In/Out Primary Navigation
+  ------------------------------------------------------*/
+
+  $(window).on('scroll', function () {
+
+    const h = $('header').height();
+    const y = $(window).scrollTop();
+    const nav = $('#nav-wrap');
+
+    if ((y > h * .20) && (y < h) && ($(window).outerWidth() > 768)) {
+      nav.fadeOut('fast');
+    } else {
+      if (y < h * .20) {
+        nav.removeClass('opaque').fadeIn('fast');
+      } else {
+        nav.addClass('opaque').fadeIn('fast');
+      }
+    }
+  });
+});
+
+    </script>
   </body>
 </html>
