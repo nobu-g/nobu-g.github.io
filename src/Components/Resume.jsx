@@ -6,6 +6,7 @@ const Resume = (props) => {
   let education = null;
   let publications = null;
   let experience = null;
+  let honors = null;
 
   if (props.data) {
     education = props.data.education.map((education) => {
@@ -85,6 +86,15 @@ const Resume = (props) => {
         </div>
       </>
     );
+
+    honors = props.data.honors.map(honor => {
+      return (
+        <div key={honor.name}>
+          <h3>{honor.name}</h3>
+          <span>&bull;</span> <em className={style.date}>{honor.years}</em>
+        </div>
+      );
+    });
   }
 
   // const skills = props.data.skills.map(skills => {
@@ -133,6 +143,15 @@ const Resume = (props) => {
           </h1>
         </div>
         <div className={"nine columns " + style["main-col"]}>{experience}</div>
+      </div>
+
+      <div className={"row " + style.honors}>
+        <div className={"three columns " + style["header-col"]}>
+          <h1>
+            <span>Honors</span>
+          </h1>
+        </div>
+        <div className={"nine columns " + style["main-col"]}>{honors}</div>
       </div>
 
       {/*<div className="row skill">*/}
