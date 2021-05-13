@@ -44,13 +44,13 @@ const About = (props) => {
               <h2>Contact Details</h2>
               <p className="address">
                 <span>{name}</span>
-                <br />
+                <br/>
                 <span>
                   Kurohashi-Chu-Murawaki Lab.
-                  <br />
+                  <br/>
                   Yoshida-honmachi, Sakyo-ku, Kyoto, 606-8501, Japan
                 </span>
-                <br />
+                <br/>
                 {/*<span>{phone}</span><br/>*/}
                 <span>{email}</span>
               </p>

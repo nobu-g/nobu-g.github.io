@@ -28,9 +28,9 @@ const Resume = (props) => {
           <h3>{publication.title}</h3>
           <p>
             {publication.author}
-            <br />
+            <br/>
             {publication.misc}
-            <br />
+            <br/>
             {Object.entries(publication.resource).map(([kind, url]) => (
               <span key={kind}>
                 [<a href={url}>{kind}</a>]
@@ -61,9 +61,9 @@ const Resume = (props) => {
           <p className={style.info}>
             {intern.place}
             <span>&bull;</span> <em className={style.date}>{intern.years}</em>
-            <br />
+            <br/>
             {intern.description}
-            <br />
+            <br/>
             {Object.entries(intern.resource).map(([kind, url]) => (
               <span key={kind}>
                 [<a href={url}>{kind}</a>]

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 
 class Contact extends Component {
   render() {
@@ -86,7 +86,7 @@ class Contact extends Component {
                 <div>
                   <button className="submit">Submit</button>
                   <span id="image-loader">
-                    <img alt="" src="images/loader.gif" />
+                    <img alt="" src="images/loader.gif"/>
                   </span>
                 </div>
               </fieldset>
@@ -95,7 +95,7 @@ class Contact extends Component {
             <div id="message-warning"> Error boy</div>
             <div id="message-success">
               <i className="fa fa-check"></i>Your message was sent, thank you!
-              <br />
+              <br/>
             </div>
           </div>
 
@@ -104,10 +104,10 @@ class Contact extends Component {
               <h4>Address and Phone</h4>
               <p className="address">
                 {name}
-                <br />
-                {street} <br />
+                <br/>
+                {street} <br/>
                 {city}, {state} {zip}
-                <br />
+                <br/>
                 <span>{phone}</span>
               </p>
             </div>

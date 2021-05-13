@@ -5,72 +5,80 @@
 /* ------------------------------------------------------------------ */
 
 .resume {
-  background: #fff;
-  padding-top: 90px;
-  padding-bottom: 72px;
-  overflow: hidden;
+    background: #fff;
+    padding-top: 90px;
+    padding-bottom: 72px;
+    overflow: hidden;
 }
 
 a,
 a:visited {
-  color: #11abb0;
+    color: #11abb0;
 }
+
 a:hover,
 a:focus {
-  color: #313131;
+    color: #313131;
 }
 
 h1 {
-  font: 18px/24px "opensans-bold", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+    font: 18px/24px "opensans-bold", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
+
 h1 span {
-  border-bottom: 3px solid #11abb0;
-  padding-bottom: 6px;
+    border-bottom: 3px solid #11abb0;
+    padding-bottom: 6px;
 }
+
 h3 {
-  font: 25px/30px "opensans-bold", sans-serif;
+    font: 25px/30px "opensans-bold", sans-serif;
 }
 
 .header-col {
-  padding-top: 9px;
+    padding-top: 9px;
 }
+
 .main-col {
-  padding-right: 10%;
+    padding-right: 10%;
 }
 
 .education, .work, .publication, .experience {
-  margin-bottom: 48px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e8e8e8;
 }
+
 .education .info {
-  font: 16px/24px "librebaskerville-italic", serif;
-  color: #6e7881;
-  margin-bottom: 18px;
-  margin-top: 9px;
+    font: 16px/24px "librebaskerville-italic", serif;
+    color: #6e7881;
+    margin-bottom: 18px;
+    margin-top: 9px;
 }
+
 .info span {
-  margin-right: 5px;
-  margin-left: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
+
 .date {
-  font: 15px/24px "opensans-regular", sans-serif;
-  margin-top: 6px;
+    font: 15px/24px "opensans-regular", sans-serif;
+    margin-top: 6px;
 }
 
 .publication h3 {
-  font: 25px/30px "opensans-bold", "Noto Sans JP", sans-serif;
-  font-weight: 700;
+    font: 25px/30px "opensans-bold", "Noto Sans JP", sans-serif;
+    font-weight: 700;
 }
+
 .publication .p #span {
-  white-space:nowrap;
+    white-space: nowrap;
 }
 
 .experience h4 {
-  font: 20px "opensans", "Noto Sans JP", sans-serif;
-  font-weight: 400;
+    font: 20px "opensans", "Noto Sans JP", sans-serif;
+    font-weight: 400;
 }
 
 /*----------------------------------------------*/
@@ -78,44 +86,49 @@ h3 {
 /*----------------------------------------------*/
 
 .bars {
-  width: 95%;
-  float: left;
-  padding: 0;
-  text-align: left;
+    width: 95%;
+    float: left;
+    padding: 0;
+    text-align: left;
 }
-.bars .skills {
-  margin-top: 36px;
-  list-style: none;
-}
-.bars li {
-  position: relative;
-  margin-bottom: 60px;
-  background: #ccc;
-  height: 42px;
-  border-radius: 3px;
-}
-.bars li em {
-  font: 15px "opensans-bold", sans-serif;
-  color: #313131;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: normal;
-  position: relative;
-  top: -36px;
-}
-.bar-expand {
-  position: absolute;
-  left: 0;
-  top: 0;
 
-  margin: 0;
-  padding-right: 24px;
-  background: #313131;
-  display: inline-block;
-  height: 42px;
-  line-height: 42px;
-  border-radius: 3px 0 0 3px;
+.bars .skills {
+    margin-top: 36px;
+    list-style: none;
 }
+
+.bars li {
+    position: relative;
+    margin-bottom: 60px;
+    background: #ccc;
+    height: 42px;
+    border-radius: 3px;
+}
+
+.bars li em {
+    font: 15px "opensans-bold", sans-serif;
+    color: #313131;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    position: relative;
+    top: -36px;
+}
+
+.bar-expand {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    margin: 0;
+    padding-right: 24px;
+    background: #313131;
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 3px 0 0 3px;
+}
+
 /*
  .git {
        -moz-animation: git 2s ease;

@@ -9,7 +9,7 @@ const Portfolio = (props) => {
         <div key={project.title} className="columns portfolio-item">
           <div className="item-wrap">
             <a href={project.url} title={project.title}>
-              <img alt={project.title} src={projectImage} />
+              <img alt={project.title} src={projectImage}/>
               <div className="overlay">
                 <div className="portfolio-item-meta">
                   <h5>{project.title}</h5>

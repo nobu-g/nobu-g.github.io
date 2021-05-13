@@ -54,7 +54,7 @@ const Header = (props) => {
         <div className="banner-text">
           <h1 className="responsive-headline">I'm {name}.</h1>
           <h3>{description}</h3>
-          <hr />
+          <hr/>
           <ul className="social">{networks}</ul>
         </div>
       </div>
