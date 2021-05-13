@@ -21,7 +21,7 @@ const Footer = (props) => {
           <ul className="social-links">{networks}</ul>
 
           <ul className="copyright">
-            <li>&copy; Copyright 2017 Tim Baker</li>
+            <li>&copy; Copyright 2020 Nobuhiro Ueda</li>
             <li>
               Design by{" "}
               <a title="Styleshout" href="http://www.styleshout.com/">
