@@ -27,8 +27,8 @@ const About = (props) => {
 
           <p>
             I am a master student and a Ph.D. candidate at
-            Kurohashi-Chu-Murawaki Lab., Kyoto University. I'm interested in how
-            we can make computers understand natural language. Currently, I'm
+            Kurohashi-Chu-Murawaki Lab., Kyoto University. I&apos;m interested in how
+            we can make computers understand natural language. Currently, I&apos;m
             working on a research about anaphora resolution in Japanese. Try{" "}
             <a
               href="https://lotus.kuee.kyoto-u.ac.jp/cohesion-analysis/public/"
