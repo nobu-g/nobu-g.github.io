@@ -11,30 +11,30 @@
     overflow: hidden;
 }
 
-a,
-a:visited {
-    color: #11abb0;
-}
+/*a,*/
+/*a:visited {*/
+/*    color: #11abb0;*/
+/*}*/
 
-a:hover,
-a:focus {
-    color: #313131;
-}
+/*a:hover,*/
+/*a:focus {*/
+/*    color: #313131;*/
+/*}*/
 
-h1 {
-    font: 18px/24px "opensans-bold", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+/*h1 {*/
+/*    font: 18px/24px "opensans-bold", sans-serif;*/
+/*    text-transform: uppercase;*/
+/*    letter-spacing: 1px;*/
+/*}*/
 
-h1 span {
-    border-bottom: 3px solid #11abb0;
-    padding-bottom: 6px;
-}
+/*h1 span {*/
+/*    border-bottom: 3px solid #11abb0;*/
+/*    padding-bottom: 6px;*/
+/*}*/
 
-h3 {
-    font: 25px/30px "opensans-bold", sans-serif;
-}
+/*h3 {*/
+/*    font: 25px/30px "opensans-bold", sans-serif;*/
+/*}*/
 
 .header-col {
     padding-top: 9px;
