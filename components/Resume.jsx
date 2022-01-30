@@ -1,6 +1,6 @@
 import React from "react";
 
-import style from "./Resume.module.css";
+import style from "../styles/Resume.module.css";
 
 const Resume = (props) => {
   let education = null;
@@ -12,7 +12,7 @@ const Resume = (props) => {
     education = props.data.education.map((education) => {
       return (
         <div key={education.school}>
-          <h3>{education.school}</h3>
+          <h3 className={style.h3}>{education.school}</h3>
           <p className={style.info}>
             {education.degree} <span>&bull;</span>
             <em className={style.date}>{education.graduated}</em>

@@ -64,7 +64,8 @@ header .banner-text {
 }
 
 header .banner-text h1 {
-    font: 90px/1.1em 'opensans-bold', sans-serif;
+    font: 90px/1.1em 'Open Sans', sans-serif;
+    font-weight: bold;
     color: #fff;
     letter-spacing: -2px;
     margin: 0 auto 18px auto;
@@ -1075,7 +1076,6 @@ footer .social-links li:first-child {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 
     color: #fff;

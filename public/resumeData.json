@@ -17,17 +17,17 @@
       {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/nobuhiro-ueda-9163b91b7/",
-        "className": "fa fa-linkedin"
+        "faClassName": "FaLinkedinIn"
       },
       {
         "name": "github",
         "url": "https://github.com/nobu-g",
-        "className": "fa fa-github"
+        "faClassName": "FaGithub"
       },
       {
         "name": "skype",
-        "url": "http://skype.com",
-        "className": "fa fa-skype"
+        "url": "https://skype.com",
+        "faClassName": "FaSkype"
       }
     ]
   },

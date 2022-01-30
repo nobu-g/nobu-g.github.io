@@ -1,16 +1,22 @@
 import React from "react";
+import Link from "next/link";
+import * as FontAwesome from "react-icons/fa";
+import {FaChevronUp} from "react-icons/fa";
 
 const Footer = (props) => {
   let networks = null;
   if (props.data) {
-    networks = props.data.social.map(function (network) {
+    networks = props.data.social.map(network => {
+      const FaIcon = FontAwesome[network.faClassName];
       return (
         <li key={network.name}>
-          <a href={network.url}>
-            <i className={network.className}></i>
-          </a>
+          <Link href={network.url}>
+            <a>
+              <FaIcon/>
+            </a>
+          </Link>
         </li>
-      );
+      )
     });
   }
 
@@ -31,9 +37,11 @@ const Footer = (props) => {
           </ul>
         </div>
         <div id="go-top">
-          <a className="smoothscroll" title="Back to Top" href="#home">
-            <i className="icon-up-open"></i>
-          </a>
+          <Link href="#home">
+            <a className="smoothscroll" title="Back to Top">
+              <FaChevronUp/>
+            </a>
+          </Link>
         </div>
       </div>
     </footer>

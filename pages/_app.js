@@ -1,5 +1,5 @@
-import '../styles/globals.css'
 import '../styles/default.css'
+import '../styles/globals.css'
 import '../styles/layout.css'
 import '../styles/media-queries.css'
 
