@@ -8,7 +8,7 @@ const Resume = ({data}) => {
   let experience = null;
   let honors = null;
 
-  if (data.experience) {
+  if (data) {
     education = data.education.map((education) => {
       return (
         <div key={education.school}>
