@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 
 import style from "../styles/About.module.scss";
 
@@ -7,21 +8,19 @@ const About = (props) => {
     return <section id="about"></section>;
   }
   const name = props.data.name;
-  const profilePic = "images/" + props.data.image;
-  // const city = props.data.address.city;
-  // const state = props.data.address.state;
-  // const zip = props.data.address.zip;
-  // const phone = props.data.phone;
+  const profilePic = "/images/" + props.data.image;
   const email = props.data.email;
 
   return (
     <section id="about" className={style.about}>
       <div className="row">
         <div className="three columns">
-          <img
+          <Image
             className={style["profile-pic"]}
             src={profilePic}
             alt="Nobuhiro Ueda Profile Pic"
+            width={120}
+            height={120}
           />
         </div>
         <div className={"nine columns " + style['main-col']}>
