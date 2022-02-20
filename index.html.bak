@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+            name="description"
+            content="This is the homepage of Nobuhiro Ueda. About his research and education."
+    />
+    <meta name="theme-color" content="#000000"/>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"/>
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/default.css"/>
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/layout.css"/>
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/media-queries.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+            rel="stylesheet"
+    />
+    <title>Nobuhiro Ueda</title>
+</head>
+
+<body>
+<noscript> You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script>
+  jQuery(document).ready(function ($) {
+
+    /*----------------------------------------------------*/
+    /*	Fade In/Out Primary Navigation
+    ------------------------------------------------------*/
+
+    $(window).on('scroll', function () {
+
+      const h = $('header').height();
+      const y = $(window).scrollTop();
+      const nav = $('#nav-wrap');
+
+      if ((y > h * .20) && (y < h) && ($(window).outerWidth() > 768)) {
+        nav.fadeOut('fast');
+      } else {
+        if (y < h * .20) {
+          nav.removeClass('opaque').fadeIn('fast');
+        } else {
+          nav.addClass('opaque').fadeIn('fast');
+        }
+      }
+    });
+  });
+
+</script>
+</body>
+</html>
