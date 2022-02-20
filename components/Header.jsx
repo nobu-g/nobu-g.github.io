@@ -3,7 +3,7 @@ import Link from "next/link";
 import * as FontAwesome from "react-icons/fa";
 import {FaChevronCircleDown} from "react-icons/fa";
 
-import style from "../styles/Header.module.css";
+import style from "../styles/Header.module.scss";
 
 const Header = (props) => {
   if (props.data) {

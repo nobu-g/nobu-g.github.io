@@ -1,6 +1,6 @@
 import React from "react";
 
-import style from "../styles/Resume.module.css";
+import style from "../styles/Resume.module.scss";
 
 const Resume = (props) => {
   let education = null;
