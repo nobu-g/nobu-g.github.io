@@ -3,13 +3,13 @@ import Image from 'next/image'
 
 import style from "../styles/About.module.scss";
 
-const About = (props) => {
-  if (!props.data) {
+const About = ({data}) => {
+  if (!data) {
     return <section id="about"></section>;
   }
-  const name = props.data.name;
-  const profilePic = "/images/" + props.data.image;
-  const email = props.data.email;
+  const name = data.name;
+  const profilePic = "/images/" + data.image;
+  const email = data.email;
 
   return (
     <section id="about" className={style.about}>

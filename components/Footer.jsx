@@ -3,10 +3,10 @@ import Link from "next/link";
 import * as FontAwesome from "react-icons/fa";
 import {FaChevronUp} from "react-icons/fa";
 
-const Footer = (props) => {
+const Footer = ({data}) => {
   let networks = null;
-  if (props.data) {
-    networks = props.data.social.map(network => {
+  if (data) {
+    networks = data.social.map(network => {
       const FaIcon = FontAwesome[network.faClassName];
       return (
         <li key={network.name}>

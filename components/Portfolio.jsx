@@ -1,9 +1,9 @@
 import React from "react";
 
-const Portfolio = (props) => {
+const Portfolio = ({data}) => {
   let projects = null;
-  if (props.data) {
-    projects = props.data.projects.map(function (project) {
+  if (data) {
+    projects = data.projects.map(function (project) {
       const projectImage = "images/portfolio/" + project.image;
       return (
         <div key={project.title} className="columns portfolio-item">

@@ -2,14 +2,14 @@ import React from "react";
 
 import style from "../styles/Resume.module.scss";
 
-const Resume = (props) => {
+const Resume = ({data}) => {
   let education = null;
   let publications = null;
   let experience = null;
   let honors = null;
 
-  if (props.data) {
-    education = props.data.education.map((education) => {
+  if (data.experience) {
+    education = data.education.map((education) => {
       return (
         <div key={education.school}>
           <h3 className={style.h3}>{education.school}</h3>
@@ -22,7 +22,7 @@ const Resume = (props) => {
       );
     });
 
-    publications = props.data.publications.map((publication) => {
+    publications = data.publications.map((publication) => {
       return (
         <div key={publication.title}>
           <h3>{publication.title}</h3>
@@ -51,7 +51,7 @@ const Resume = (props) => {
       );
     });
 
-    const ta = props.data.experience["teaching assistant"].map((ta) => {
+    const ta = data.experience["teaching assistant"].map((ta) => {
       return (
         <li key={ta.title}>
           <h4>{ta.title}</h4>
@@ -64,7 +64,7 @@ const Resume = (props) => {
       );
     });
 
-    const intern = props.data.experience["internship"].map((intern) => {
+    const intern = data.experience["internship"].map((intern) => {
       return (
         <li key={intern.company}>
           <h4>{intern.company}</h4>
@@ -97,7 +97,7 @@ const Resume = (props) => {
       </>
     );
 
-    honors = props.data.honors.map(honor => {
+    honors = data.honors.map(honor => {
       return (
         <div key={honor.name}>
           <h3>{honor.name}</h3>
@@ -107,7 +107,7 @@ const Resume = (props) => {
     });
   }
 
-  // const skills = props.data.skills.map(skills => {
+  // const skills = data.skills.map(skills => {
   //   const className = 'bar-expand ' + skills.name.toLowerCase();
   //   return (
   //     <li key={skills.name}>
