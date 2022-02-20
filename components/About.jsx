@@ -27,8 +27,8 @@ const About = ({data}) => {
           <h2>About Me</h2>
 
           <p>
-            I am a master student and a Ph.D. candidate at
-            Kurohashi-Chu-Murawaki Lab., Kyoto University. I&apos;m interested in how
+            I am a Ph.D. student at
+            Kurohashi-Chu-Murawaki Lab., Kyoto University, Japan. I&apos;m interested in how
             we can make computers understand natural language. Currently, I&apos;m
             working on a research about anaphora resolution in Japanese. Try{" "}
             <a
