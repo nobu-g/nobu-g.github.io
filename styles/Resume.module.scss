@@ -69,13 +69,14 @@
     margin-top: 6px;
 }
 
-.publication h3 {
-    font: 25px/30px "Open Sans", "Noto Sans JP", sans-serif;
-    font-weight: 700;
-}
-
-.publication .p #span {
-    white-space: nowrap;
+.publication {
+    h3 {
+        font: 25px/30px "Open Sans", "Noto Sans JP", sans-serif;
+        font-weight: 700;
+    }
+    p {
+        line-height: 1.5em;
+    }
 }
 
 .experience h4 {
