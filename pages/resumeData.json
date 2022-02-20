@@ -137,6 +137,14 @@
       {
         "name": "Informatics, AI, and Data Science Fellowship for Doctoral Talent",
         "years": "April 2021 - March 2024"
+      },
+      {
+        "name": "2nd place in 16th Young Researcher Association for NLP Studies (YANS) Symposium Hackathon",
+        "years": "August 2022",
+        "resource": {
+          "report": "https://yans.anlp.jp/entry/yans2021report",
+          "code": "https://github.com/upura/yans2021-hackathon"
+        }
       }
     ],
     "skills": [

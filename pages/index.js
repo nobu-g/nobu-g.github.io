@@ -10,22 +10,30 @@ import Footer from '../components/Footer';
 // import Contact from './components/Contact';
 // import Testimonials from './components/Testimonials';
 
+import resumeData from './resumeData.json';
+
 ReactGA.initialize('UA-110570651-1');
 
-const fetchConfig = async () => {
-  const response = await fetch('/resumeData.json');
-  return await response.json();
+// const fetchConfig = async () => {
+//   const response = await fetch('/resumeData.json');
+//   return await response.json();
+// }
+
+export async function getStaticProps() {
+  return {
+    props: {
+      resumeData
+    }
+  }
 }
 
-const Home = () => {
-  const [config, setConfig] = React.useState({});
+const Home = ({resumeData}) => {
+  const config = resumeData;
   const [section, setSection] = React.useState("home");
   const [opaque, setOpaque] = React.useState(false);
 
   React.useEffect(() => {
     ReactGA.pageview(window.location.pathname);
-    fetchConfig()
-      .then(r => setConfig(r));
   }, []);
 
   return (
