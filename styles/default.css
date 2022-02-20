@@ -95,7 +95,6 @@ blockquote, q {
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
-    content: none;
 }
 
 ins {
@@ -335,7 +334,7 @@ abbr {
     font-weight: bold;
     font-variant: small-caps;
     text-transform: lowercase;
-    letter-spacing: .5px;
+    letter-spacing: 1px;
     color: gray;
 }
 

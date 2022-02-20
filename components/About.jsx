@@ -1,5 +1,7 @@
 import React from "react";
 
+import style from "../styles/About.module.scss";
+
 const About = (props) => {
   if (!props.data) {
     return <section id="about"></section>;
@@ -13,16 +15,16 @@ const About = (props) => {
   const email = props.data.email;
 
   return (
-    <section id="about">
+    <section id="about" className={style.about}>
       <div className="row">
         <div className="three columns">
           <img
-            className="profile-pic"
+            className={style["profile-pic"]}
             src={profilePic}
             alt="Nobuhiro Ueda Profile Pic"
           />
         </div>
-        <div className="nine columns main-col">
+        <div className={"nine columns " + style['main-col']}>
           <h2>About Me</h2>
 
           <p>
@@ -40,7 +42,7 @@ const About = (props) => {
             .
           </p>
           <div className="row">
-            <div className="columns contact-details">
+            <div className={'columns ' + style['contact-details']}>
               <h2>Contact Details</h2>
               <p className="address">
                 <span>{name}</span>
