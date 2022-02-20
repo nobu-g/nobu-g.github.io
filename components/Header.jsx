@@ -3,6 +3,8 @@ import Link from "next/link";
 import * as FontAwesome from "react-icons/fa";
 import {FaChevronCircleDown} from "react-icons/fa";
 
+import style from "../styles/Header.module.css";
+
 const Header = (props) => {
   if (props.data) {
     var name = props.data.name;
@@ -23,12 +25,12 @@ const Header = (props) => {
   const section = props.section;
 
   return (
-    <header id="home">
-      <nav id="nav-wrap">
-        <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
+    <header id="home" className={style.header}>
+      <nav id="nav-wrap" className={style['nav-wrap']}>
+        <a className={style['mobile-btn']} href="#nav-wrap" title="Show navigation">
           Show navigation
         </a>
-        <a className="mobile-btn" href="#home" title="Hide navigation">
+        <a className={style['mobile-btn']} href="#home" title="Hide navigation">
           Hide navigation
         </a>
 
@@ -56,16 +58,16 @@ const Header = (props) => {
         </ul>
       </nav>
 
-      <div className="row banner">
-        <div className="banner-text">
+      <div className={style.banner + " row"}>
+        <div className={style['banner-text']}>
           <h1 className="responsive-headline">I&apos;m {name}.</h1>
           <h3>{description}</h3>
           <hr/>
-          <ul className="social">{networks}</ul>
+          <ul className={style.social}>{networks}</ul>
         </div>
       </div>
 
-      <p className="scrolldown">
+      <p className={style['scrolldown']}>
         <Link href="#about">
           <a className="smoothscroll">
             <FaChevronCircleDown/>

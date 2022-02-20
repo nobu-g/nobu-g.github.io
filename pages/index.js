@@ -45,6 +45,9 @@ const Home = () => {
           href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Open+Sans:wght@400;700&display=swap"
+          rel="stylesheet"/>
       </Head>
       <Header data={config.main} section={section}/>
 

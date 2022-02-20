@@ -84,7 +84,6 @@ code, kbd, pre, samp {
 }
 
 pre {
-    white-space: pre;
     white-space: pre-wrap;
     word-wrap: break-word;
 }
@@ -243,7 +242,7 @@ small {
 
 /*	Blockquotes */
 blockquote {
-    margin: 30px 0px;
+    margin: 30px 0;
     padding-left: 40px;
     position: relative;
 }
@@ -252,7 +251,7 @@ blockquote:before {
     content: "\201C";
     opacity: 0.45;
     font-size: 80px;
-    line-height: 0px;
+    line-height: 0;
     margin: 0;
     font-family: arial, sans-serif;
 
@@ -262,7 +261,8 @@ blockquote:before {
 }
 
 blockquote p {
-    font-family: 'librebaskerville-italic', serif;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
     padding: 0;
     font-size: 18px;
     line-height: 36px;
@@ -297,7 +297,7 @@ blockquote cite a:visited {
 /* --------------------------------------------------------------------- */
 .pull-quote {
     position: relative;
-    padding: 18px 30px 18px 0px;
+    padding: 18px 30px 18px 0;
 }
 
 .pull-quote:before,
@@ -306,7 +306,7 @@ blockquote cite a:visited {
     opacity: 0.45;
     position: absolute;
     font-size: 80px;
-    font-family: Arial, Sans-Serif;
+    font-family: Arial, Sans-Serif, serif;
 }
 
 .pull-quote:before {
@@ -575,7 +575,6 @@ dd {
 
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-    -khtml-border-radius: 3px;
     border-radius: 3px;
 }
 
@@ -607,11 +606,11 @@ img {
 }
 
 img.pull-right {
-    margin: 12px 0px 0px 18px;
+    margin: 12px 0 0 18px;
 }
 
 img.pull-left {
-    margin: 12px 18px 0px 0px;
+    margin: 12px 18px 0 0;
 }
 
 /*  6. Buttons  --------------------------------------------------------- */
@@ -643,7 +642,6 @@ input[type="button"] {
 
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-    -khtml-border-radius: 3px;
     border-radius: 3px;
 }
 
@@ -1108,47 +1106,47 @@ properly.
 
     /* Offsets */
     .row .offset-1 {
-        margin-left: 0%;
+        margin-left: 0;
     }
 
     .row .offset-2 {
-        margin-left: 0%;
+        margin-left: 0;
     }
 
     .row .offset-3 {
-        margin-left: 0%;
+        margin-left: 0;
     }
 
     .row .offset-4 {
-        margin-left: 0%;
+        margin-left: 0;
     }
 
     .row .offset-5 {
-        margin-left: 0%;
+        margin-left: 0;
     }
 
     .row .offset-6 {
-        margin-left: 0%;
+        margin-left: 0;
     }
 
     .row .offset-7 {
-        margin-left: 0%;
+        margin-left: 0;
     }
 
     .row .offset-8 {
-        margin-left: 0%;
+        margin-left: 0;
     }
 
     .row .offset-9 {
-        margin-left: 0%;
+        margin-left: 0;
     }
 
     .row .offset-10 {
-        margin-left: 0%;
+        margin-left: 0;
     }
 
     .row .offset-11 {
-        margin-left: 0%;
+        margin-left: 0;
     }
 }
 
