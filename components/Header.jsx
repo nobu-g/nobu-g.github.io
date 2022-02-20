@@ -5,11 +5,11 @@ import {IoIosArrowDropdownCircle} from "react-icons/io";
 
 import style from "../styles/Header.module.scss";
 
-const Header = (props) => {
-  if (props.data) {
-    var name = props.data.name;
-    var description = props.data.description;
-    var networks = props.data.social.map(network => {
+const Header = ({data, section, opaque}) => {
+  if (data) {
+    var name = data.name;
+    var description = data.description;
+    var networks = data.social.map(network => {
       const FaIcon = FontAwesome[network.faClassName];
       return (
         <li key={network.name}>
@@ -22,11 +22,10 @@ const Header = (props) => {
       )
     });
   }
-  const section = props.section;
 
   return (
     <header id="home" className={style.header}>
-      <nav id="nav-wrap" className={style['nav-wrap']}>
+      <nav id="nav-wrap" className={style['nav-wrap'] + (opaque && (' ' + style.opaque))}>
         <a className={style['mobile-btn']} href="#nav-wrap" title="Show navigation">
           Show navigation
         </a>

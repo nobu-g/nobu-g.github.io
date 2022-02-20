@@ -20,6 +20,7 @@ const fetchConfig = async () => {
 const Home = () => {
   const [config, setConfig] = React.useState({});
   const [section, setSection] = React.useState("home");
+  const [opaque, setOpaque] = React.useState(false);
 
   React.useEffect(() => {
     ReactGA.pageview(window.location.pathname);
@@ -39,7 +40,7 @@ const Home = () => {
         <meta name="description" content="This is the homepage of Nobuhiro Ueda. About his research and education."/>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
-      <Header data={config.main} section={section}/>
+      <Header data={config.main} section={section} opaque={opaque}/>
 
       <main>
         <Waypoint onEnter={({previousPosition}) => {
@@ -50,6 +51,14 @@ const Home = () => {
             setSection("about");
           }
         }} topOffset="40%" bottomOffset="40%"/>
+        <Waypoint
+          onEnter={({previousPosition}) => {
+            setOpaque(false);
+          }}
+          onLeave={({previousPosition}) => {
+            setOpaque(true);
+          }}
+        />
         <About data={config.main}/>
         <Waypoint onEnter={({previousPosition}) => {
           if (previousPosition === Waypoint.above) {
