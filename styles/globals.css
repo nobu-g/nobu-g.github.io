@@ -11,11 +11,6 @@ html {
     scroll-behavior: smooth;
 }
 
-a,
-a:visited {
-    color: #11abb0;
-}
-
 a:hover,
 a:focus {
     color: #313131;

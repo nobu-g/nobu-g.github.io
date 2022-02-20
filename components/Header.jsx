@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import * as FontAwesome from "react-icons/fa";
-import {FaChevronCircleDown} from "react-icons/fa";
+import {IoIosArrowDropdownCircle} from "react-icons/io";
 
 import style from "../styles/Header.module.scss";
 
@@ -70,7 +70,7 @@ const Header = (props) => {
       <p className={style['scrolldown']}>
         <Link href="#about">
           <a className="smoothscroll">
-            <FaChevronCircleDown/>
+            <IoIosArrowDropdownCircle/>
           </a>
         </Link>
       </p>
