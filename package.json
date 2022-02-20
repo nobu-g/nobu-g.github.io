@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
     "lint": "next lint",
     "deploy": "next build && gh-pages -d build"
   },
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "eslint": "^8.7",
-    "eslint-config-next": "^12.0"
+    "eslint-config-next": "^12.0",
+    "serve": "^13.0.2"
   }
 }
