@@ -48,6 +48,29 @@
     ],
     "publications": [
       {
+        "author": "植田 暢大, 大村 和正, 児玉 貴志, 清丸 寛一, 村脇 有吾, 河原 大輔 and 黒橋 禎夫",
+        "title": "KWJA：汎用言語モデルに基づく日本語解析器",
+        "misc": "情報処理学会 第253回自然言語処理研究会, 京都, (2022.9).",
+        "resource": {
+          "paper": "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=220232&item_no=1&page_id=13&block_id=8",
+          "code": "https://github.com/ku-nlp/kwja"
+        },
+        "award": {
+          "name": "優秀研究賞",
+          "image": "/images/award.png"
+        }
+      },
+      {
+        "author": "Nobuhiro Ueda and Sadao Kurohashi",
+        "title": "Improving Bridging Reference Resolution using Continuous Essentiality from Crowdsourcing",
+        "misc": "Proceedings of the Fifth Workshop on Computational Models of Reference, Anaphora and Coreference (CRAC 2022), (2022.10), Gyeongju, Republic of Korea",
+        "resource": {
+          "paper": "https://aclanthology.org/2022.crac-1.8.pdf",
+          "code": "https://github.com/nobu-g/bridging-resolution",
+          "slides": "https://speakerdeck.com/nobug/kyoto-waseda-japanese-analyzer"
+        }
+      },
+      {
         "author": "Nobuhiro Ueda, Daisuke Kawahara and Sadao Kurohashi",
         "title": "BERT-based Cohesion Analysis of Japanese Texts",
         "misc": "Proceedings of the 28th International Conference on Computational Linguistics (COLING 2020), (2020.12)",
@@ -93,6 +116,12 @@
           "title": "C Programming Class",
           "place": "Kyoto University, Kyoto",
           "years": "April 2021 - July 2021",
+          "description": ""
+        },
+        {
+          "title": "「人を知る」人工知能講座2021",
+          "place": "Online",
+          "years": "November 2020",
           "description": ""
         },
         {

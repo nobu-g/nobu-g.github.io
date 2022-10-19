@@ -3,7 +3,6 @@ import Image from "./Image";
 
 import style from "../styles/About.module.scss";
 
-
 const About = ({data}) => {
   if (!data) {
     return <section id="about"></section>;
