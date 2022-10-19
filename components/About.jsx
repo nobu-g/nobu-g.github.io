@@ -32,7 +32,7 @@ const About = ({data}) => {
             we can make computers understand natural language. Currently, I&apos;m
             working on a research about anaphora resolution in Japanese. Try{" "}
             <a
-              href="https://lotus.kuee.kyoto-u.ac.jp/cohesion-analysis/public/"
+              href="https://lotus.kuee.kyoto-u.ac.jp/cohesion-analysis/pub/"
               target="_blank"
               rel="noreferrer noopener"
             >
