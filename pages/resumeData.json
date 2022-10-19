@@ -190,6 +190,12 @@
   "portfolio": {
     "projects": [
       {
+        "title": "kwja",
+        "category": "A unified language analyzer for Japanese",
+        "image": "kwja.png",
+        "url": "https://github.com/ku-nlp/kwja"
+      },
+      {
         "title": "cohesion-analysis",
         "category": "A BERT based Japanese cohesion analyzer",
         "image": "cohesion-analysis.png",
