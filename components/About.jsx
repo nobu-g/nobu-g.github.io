@@ -1,7 +1,8 @@
 import React from "react";
-import Image from 'next/image'
+import Image from "./Image";
 
 import style from "../styles/About.module.scss";
+
 
 const About = ({data}) => {
   if (!data) {
