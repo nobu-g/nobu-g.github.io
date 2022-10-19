@@ -160,6 +160,17 @@
             "report": "https://engineering.linecorp.com/ja/blog/kyoto-intern2019/"
           }
         }
+      ],
+      "presentation and talks": [
+        {
+          "company": "15th ICT innovation",
+          "place": "Kyoto University",
+          "years": "February 2021",
+          "description": "Gave a poster presentation on my research",
+          "resource": {
+            "link": "https://ict-nw.i.kyoto-u.ac.jp/ict-innovation/15th/"
+          }
+        }
       ]
     },
     "honors": [
