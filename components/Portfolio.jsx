@@ -3,13 +3,16 @@ import React from "react";
 const Portfolio = ({data}) => {
   let projects = null;
   if (data) {
-    projects = data.projects.map(function (project) {
+    projects = data.projects.map(project => {
       const projectImage = "images/portfolio/" + project.image;
       return (
         <div key={project.title} className="columns portfolio-item">
           <div className="item-wrap">
             <a href={project.url} title={project.title}>
-              <img alt={project.title} src={projectImage}/>
+              <img
+                alt={project.title}
+                src={projectImage}
+              />
               <div className="overlay">
                 <div className="portfolio-item-meta">
                   <h5>{project.title}</h5>

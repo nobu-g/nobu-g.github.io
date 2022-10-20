@@ -84,6 +84,26 @@ const Resume = ({data}) => {
       );
     });
 
+    const presentation = data.experience["presentation and talks"].map(pt => {
+      return (
+        <li key={pt.venue}>
+          <h4>{pt.venue}</h4>
+          <p className={style.info}>
+            {pt.place}
+            <span>&bull;</span> <em className={style.date}>{pt.years}</em>
+            <br/>
+            {pt.description}
+            <br/>
+            {Object.entries(pt.resource).map(([kind, url]) => (
+              <span key={kind}>
+                [<a href={url}>{kind}</a>]
+              </span>
+            ))}
+          </p>
+        </li>
+      );
+    });
+
     experience = (
       <>
         <div key="teaching assistant">
@@ -93,6 +113,10 @@ const Resume = ({data}) => {
         <div key="intern">
           <h3>Internship</h3>
           <ul>{intern}</ul>
+        </div>
+        <div key="presentation and talks">
+          <h3>Presentation & Talk</h3>
+          <ul>{presentation}</ul>
         </div>
       </>
     );
