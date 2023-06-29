@@ -60,7 +60,8 @@
         "title": "実世界における総合的参照解析を目的としたマルチモーダル対話データセットの構築",
         "misc": "言語処理学会 第29回年次大会, 沖縄, (2023.3).",
         "resource": {
-          "paper": "https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/H12-1.pdf"
+          "paper": "https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/H12-1.pdf",
+          "slides": "/pub/NLP2023_slides.pdf"
         },
         "award": {
           "name": "委員特別賞",
