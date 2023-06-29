@@ -143,13 +143,34 @@
       "hackathon": [
         {
           "title": "16th Young Researcher Association for NLP Studies (YANS) Symposium Hackathon",
-          "place": "online",
+          "place": "Online",
           "years": "August 2021",
           "description": "",
-          "resource": {}
+          "resource": {
+            "report": "https://yans.anlp.jp/entry/yans2021report",
+            "code": "https://github.com/upura/yans2021-hackathon"
+          }
         }
       ],
       "teaching assistant": [
+        {
+          "title": "「人を知る」人工知能講座2022",
+          "place": "Online",
+          "years": "November 2022",
+          "description": "",
+          "resource": {
+            "website": "https://www.kyodai-original.co.jp/jinkouchinou2022/"
+          }
+        },
+        {
+          "title": "「人を知る」人工知能講座2021",
+          "place": "Online",
+          "years": "November 2021",
+          "description": "",
+          "resource": {
+            "website": "https://www.kyodai-original.co.jp/jinkouchinou2021/"
+          }
+        },
         {
           "title": "C Programming Class",
           "place": "Kyoto University, Kyoto",
@@ -158,25 +179,22 @@
           "resource": {}
         },
         {
-          "title": "「人を知る」人工知能講座2021",
-          "place": "Online",
-          "years": "November 2021",
-          "description": "",
-          "resource": {}
-        },
-        {
           "title": "「人を知る」人工知能講座2020",
           "place": "Online",
           "years": "November 2020",
           "description": "",
-          "resource": {}
+          "resource": {
+            "website": "https://www.kyodai-original.co.jp/jinkouchinou2020/"
+          }
         },
         {
           "title": "「人を知る」人工知能講座2019",
           "place": "Shin-marunouchi Building, Tokyo",
           "years": "November 2019",
           "description": "",
-          "resource": {}
+          "resource": {
+            "website": "https://www.kyodai-original.co.jp/jinkouchinou2019/"
+          }
         },
         {
           "title": "C Programming Class",
@@ -188,14 +206,14 @@
       ],
       "internship": [
         {
-          "company": "M3, Inc.",
+          "title": "M3, Inc.",
           "place": "Akasaka Intercity, Tokyo",
           "years": "September 2019",
-          "description": "Worked on improving recommendation system",
+          "description": "Worked on improving recommendation system for medical articles",
           "resource": {}
         },
         {
-          "company": "LINE",
+          "title": "LINE",
           "place": "LINE KYOTO, Kyoto",
           "years": "August 2019",
           "description": "Joined a hackathon to develop an application like Akinator, which runs on LINE",
@@ -204,14 +222,23 @@
           }
         }
       ],
-      "presentation and talks": [
+      "presentation & talks": [
         {
-          "venue": "15th ICT innovation",
+          "title": "日本語DeBERTaモデルの構築 (JLR2023)",
+          "place": "Okinawa Convention Center, Okinawa",
+          "years": "March 2023",
+          "description": "Gave a lightning talk on Japanese foundation models I developed",
+          "resource": {
+            "website": "https://jedworkshop.github.io/JLR2023/program/"
+          }
+        },
+        {
+          "title": "15th ICT innovation",
           "place": "Kyoto University",
           "years": "February 2021",
           "description": "Gave a poster presentation on my research",
           "resource": {
-            "link": "https://ict-nw.i.kyoto-u.ac.jp/ict-innovation/15th/"
+            "website": "https://ict-nw.i.kyoto-u.ac.jp/ict-innovation/15th/"
           }
         }
       ]

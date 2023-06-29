@@ -67,13 +67,12 @@ const Resume = ({data}) => {
                     <span>&bull;</span>
                     <em className={style.date}>{item.years}</em>
                     <br/>
-                    {item.description}
-                    <br/>
+                    {item.description ? <>{item.description}<br/></> : ''}
                     {
                       Object.entries(item.resource).map(([kind, url]) => (
-                        <span key={kind}>
-                        [{url ? <a href={url}>{kind}</a> : kind}]
-                        </span>
+                        <>
+                          [{url ? <a href={url}>{kind}</a> : kind}]
+                        </>
                       ))
                     }
                   </p>
