@@ -48,6 +48,35 @@
     ],
     "publications": [
       {
+        "author": "Nobuhiro Ueda, Kazumasa Omura, Takashi Kodama, Hirokazu Kiyomaru, Yugo Murawaki, Daisuke Kawahara and Sadao Kurohashi",
+        "title": "KWJA: A Unified Japanese Analyzer Based on Foundation Models",
+        "misc": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (ACL 2023): System Demonstrations, Toronto, Canada, (2023.7)",
+        "resource": {
+          "paper": ""
+        }
+      },
+      {
+        "author": "植田 暢大, 波部 英子, 湯口 彰重, 河野 誠也, 川西 康友, 黒橋 禎夫, 吉野 幸一郎",
+        "title": "実世界における総合的参照解析を目的としたマルチモーダル対話データセットの構築",
+        "misc": "言語処理学会 第29回年次大会, 沖縄, (2023.3).",
+        "resource": {
+          "paper": "https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/H12-1.pdf"
+        },
+        "award": {
+          "name": "委員特別賞",
+          "image": "/images/award.png"
+        }
+      },
+      {
+        "author": "児玉 貴志, 植田 暢大, 大村 和正, 清丸 寛一, 村脇 有吾, 河原 大輔, 黒橋 禎夫",
+        "title": "テキスト生成モデルによる日本語形態素解析",
+        "misc": "言語処理学会 第29回年次大会, 沖縄, (2023.3).",
+        "resource": {
+          "paper": "https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/C2-3.pdf",
+          "code": "https://github.com/ku-nlp/kwja"
+        }
+      },
+      {
         "author": "植田 暢大, 大村 和正, 児玉 貴志, 清丸 寛一, 村脇 有吾, 河原 大輔 and 黒橋 禎夫",
         "title": "KWJA：汎用言語モデルに基づく日本語解析器",
         "misc": "情報処理学会 第253回自然言語処理研究会, 京都, (2022.9).",
