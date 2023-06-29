@@ -31,11 +31,13 @@ const Resume = ({data}) => {
             <br/>
             {publication.misc}
             <br/>
-            {Object.entries(publication.resource).map(([kind, url]) => (
+            {
+                Object.entries(publication.resource).map(([kind, url]) => (
               <span key={kind}>
-                [<a href={url}>{kind}</a>]
+                [{url ? <a href={url}>{kind}</a> : kind}]
               </span>
-            ))}
+            ))
+            }
             {publication.award && <>
               <img
                 src={publication.award.image}
