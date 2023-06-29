@@ -150,6 +150,10 @@
           "resource": {
             "report": "https://yans.anlp.jp/entry/yans2021report",
             "code": "https://github.com/upura/yans2021-hackathon"
+          },
+          "award": {
+            "name": "2nd place",
+            "image": "/images/award.png"
           }
         }
       ],

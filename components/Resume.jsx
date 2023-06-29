@@ -38,16 +38,18 @@ const Resume = ({data}) => {
                 </span>
               ))
             }
-            {publication.award && <>
-              <img
-                src={publication.award.image}
-                height="16"
-                width="16"
-                alt="Award Icon"
-                style={{'verticalAlign': 'middle', 'marginLeft': '1rem', 'marginRight': '.5rem'}}
-              />
-              <span>{publication.award.name}</span>
-            </>}
+            {
+              publication.award && <>
+                <img
+                  src={publication.award.image}
+                  height="16"
+                  width="16"
+                  alt="Award Icon"
+                  style={{'verticalAlign': 'middle', 'marginLeft': '1rem', 'marginRight': '.5rem'}}
+                />
+                <span>{publication.award.name}</span>
+              </>
+            }
           </p>
         </div>
       );
@@ -74,6 +76,18 @@ const Resume = ({data}) => {
                           [{url ? <a href={url}>{kind}</a> : kind}]
                         </>
                       ))
+                    }
+                    {
+                      item.award && <>
+                        <img
+                          src={item.award.image}
+                          height="16"
+                          width="16"
+                          alt="Award Icon"
+                          style={{'verticalAlign': 'middle', 'marginLeft': '1rem', 'marginRight': '.5rem'}}
+                        />
+                        <span>{item.award.name}</span>
+                      </>
                     }
                   </p>
                 </li>
