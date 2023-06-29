@@ -51,7 +51,7 @@
         {
           "author": "Nobuhiro Ueda, Kazumasa Omura, Takashi Kodama, Hirokazu Kiyomaru, Yugo Murawaki, Daisuke Kawahara and Sadao Kurohashi",
           "title": "KWJA: A Unified Japanese Analyzer Based on Foundation Models",
-          "misc": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (ACL 2023): System Demonstrations, Toronto, Canada, (2023.7)",
+          "misc": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (ACL 2023): System Demonstrations, Toronto, Canada, (2023.7).",
           "resource": {
             "paper": ""
           }
@@ -59,17 +59,18 @@
         {
           "author": "Nobuhiro Ueda and Sadao Kurohashi",
           "title": "Improving Bridging Reference Resolution using Continuous Essentiality from Crowdsourcing",
-          "misc": "Proceedings of the Fifth Workshop on Computational Models of Reference, Anaphora and Coreference (CRAC 2022), (2022.10), Gyeongju, Republic of Korea",
+          "misc": "Proceedings of the Fifth Workshop on Computational Models of Reference, Anaphora and Coreference (CRAC 2022), Gyeongju, Republic of Korea, (2022.10).",
           "resource": {
             "paper": "https://aclanthology.org/2022.crac-1.8.pdf",
-            "code": "https://github.com/nobu-g/bridging-resolution",
+            "code1": "https://github.com/nobu-g/bridging-resolution",
+            "code2": "https://github.com/nobu-g/bridging-annotation",
             "slides": "/pub/CRAC2022_slides.pdf"
           }
         },
         {
           "author": "Nobuhiro Ueda, Daisuke Kawahara and Sadao Kurohashi",
           "title": "BERT-based Cohesion Analysis of Japanese Texts",
-          "misc": "Proceedings of the 28th International Conference on Computational Linguistics (COLING 2020), (2020.12)",
+          "misc": "Proceedings of the 28th International Conference on Computational Linguistics (COLING 2020), Online, (2020.12).",
           "resource": {
             "paper": "/pub/COLING2020.pdf",
             "code": "https://github.com/nobu-g/cohesion-analysis",
@@ -79,7 +80,7 @@
         {
           "author": "Akiko Aizawa, Frederic Bergeron, Junjie Chen, Fei Cheng, Katsuhiko Hayashi, Kentaro Inui, Hiroyoshi Ito, Daisuke Kawahara, Masaru Kitsuregawa, Hirokazu Kiyomaru, Masaki Kobayashi, Takashi Kodama, Sadao Kurohashi, Qianying Liu, Masaki Matsubara, Yusuke Miyao, Atsuyuki Morishima, Yugo Murawaki, Kazumasa Omura, Haiyue Song, Eiichiro Sumita, Shinji Suzuki, Ribeka Tanaka, Yu Tanaka, Masashi Toyoda, Nobuhiro Ueda, Honai Ueoka, Masao Utiyama, Ying Zhong",
           "title": "A System for Worldwide COVID-19 Information Aggregation",
-          "misc": "Proceedings of the 1st Workshop on NLP for COVID-19 (Part 2) at EMNLP 2020, Online, (2020.12)",
+          "misc": "Proceedings of the 1st Workshop on NLP for COVID-19 (Part 2) at EMNLP 2020, Online, (2020.12).",
           "resource": {
             "paper": "/pub/EMNLPWS2020.pdf",
             "url": "https://lotus.kuee.kyoto-u.ac.jp/NLPforCOVID-19/en"
