@@ -88,7 +88,17 @@ const Resume = ({data}) => {
       return (
         <div key={honor.name}>
           <h3>{honor.name}</h3>
-          <span>&bull;</span> <em className={style.date}>{honor.years}</em>
+          <p className={style.info}>
+            <em className={style.date}>{honor.years}</em>
+            <br/>
+            {
+              Object.entries(honor.resource).map(([kind, url]) => (
+                <>
+                  [{url ? <a href={url}>{kind}</a> : kind}]
+                </>
+              ))
+            }
+          </p>
         </div>
       );
     });

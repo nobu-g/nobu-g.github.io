@@ -246,7 +246,10 @@
     "honors": [
       {
         "name": "Informatics, AI, and Data Science Fellowship for Doctoral Talent",
-        "years": "April 2021 - March 2024"
+        "years": "April 2021 - March 2024",
+        "resource": {
+          "website": "https://www.i.kyoto-u.ac.jp/fellowship/"
+        }
       },
       {
         "name": "2nd place in 16th Young Researcher Association for NLP Studies (YANS) Symposium Hackathon",
