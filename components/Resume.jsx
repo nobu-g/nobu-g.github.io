@@ -2,6 +2,20 @@ import React from "react";
 
 import style from "../styles/Resume.module.scss";
 
+const Author = ({author}) => {
+  const highlightKeyword = (text, keywords) => {
+    const parts = text.split(new RegExp(`(${keywords.join('|')})`, 'gi'));
+    return parts.map((part, i) =>
+      keywords.includes(part) ? <u key={`${part}-${i}`}>{part}</u> : part
+    );
+  };
+  return (
+    <span>
+      {highlightKeyword(author, ['Nobuhiro Ueda', '植田 暢大'])}
+    </span>
+  );
+};
+
 const Resume = ({data}) => {
   let education = null;
   let publications = null;
@@ -31,7 +45,7 @@ const Resume = ({data}) => {
               <li key={item.title}>
                 <h4>{item.title}</h4>
                 <p>
-                  {item.author}
+                  <Author author={item.author}/>
                   <br/>
                   {item.misc}
                   <br/>
