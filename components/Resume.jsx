@@ -22,38 +22,45 @@ const Resume = ({data}) => {
       );
     });
 
-    publications = data.publications.map(publication => {
-      return (
-        <div key={publication.title}>
-          <h3>{publication.title}</h3>
-          <p>
-            {publication.author}
-            <br/>
-            {publication.misc}
-            <br/>
-            {
-              Object.entries(publication.resource).map(([kind, url]) => (
-                <span key={kind}>
-                [{url ? <a href={url}>{kind}</a> : kind}]
-                </span>
-              ))
-            }
-            {
-              publication.award && <>
-                <img
-                  src={publication.award.image}
-                  height="16"
-                  width="16"
-                  alt="Award Icon"
-                  style={{'verticalAlign': 'middle', 'marginLeft': '1rem', 'marginRight': '.5rem'}}
-                />
-                <span>{publication.award.name}</span>
-              </>
-            }
-          </p>
-        </div>
-      );
-    });
+    publications = Object.entries(data.publications).map(([kind, items]) => (
+      <div key={kind}>
+        <h3>{kind}</h3>
+        <ul>
+          {
+            items.map(item => (
+              <li key={item.title}>
+                <h4>{item.title}</h4>
+                <p>
+                  {item.author}
+                  <br/>
+                  {item.misc}
+                  <br/>
+                  {
+                    Object.entries(item.resource).map(([kind, url]) => (
+                      <span key={kind}>
+                      [{url ? <a href={url}>{kind}</a> : kind}]
+                      </span>
+                    ))
+                  }
+                  {
+                    item.award && <>
+                      <img
+                        src={item.award.image}
+                        height="16"
+                        width="16"
+                        alt="Award Icon"
+                        style={{'verticalAlign': 'middle', 'marginLeft': '1rem', 'marginRight': '.5rem'}}
+                      />
+                      <span>{item.award.name}</span>
+                    </>
+                  }
+                </p>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    ));
 
     experiences = Object.entries(data.experience).map(
       ([kind, items]) => (

@@ -46,101 +46,105 @@
         "description": "Learned about a wide range of engineering topics, including calculus, linear algebra, statistics, electronics, electromagnetism, and computer science."
       }
     ],
-    "publications": [
-      {
-        "author": "Nobuhiro Ueda, Kazumasa Omura, Takashi Kodama, Hirokazu Kiyomaru, Yugo Murawaki, Daisuke Kawahara and Sadao Kurohashi",
-        "title": "KWJA: A Unified Japanese Analyzer Based on Foundation Models",
-        "misc": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (ACL 2023): System Demonstrations, Toronto, Canada, (2023.7)",
-        "resource": {
-          "paper": ""
-        }
-      },
-      {
-        "author": "植田 暢大, 波部 英子, 湯口 彰重, 河野 誠也, 川西 康友, 黒橋 禎夫, 吉野 幸一郎",
-        "title": "実世界における総合的参照解析を目的としたマルチモーダル対話データセットの構築",
-        "misc": "言語処理学会 第29回年次大会, 沖縄, (2023.3).",
-        "resource": {
-          "paper": "https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/H12-1.pdf",
-          "slides": "/pub/NLP2023_slides.pdf"
+    "publications": {
+      "International Conferences and Workshops (Peer-reviewed)": [
+        {
+          "author": "Nobuhiro Ueda, Kazumasa Omura, Takashi Kodama, Hirokazu Kiyomaru, Yugo Murawaki, Daisuke Kawahara and Sadao Kurohashi",
+          "title": "KWJA: A Unified Japanese Analyzer Based on Foundation Models",
+          "misc": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (ACL 2023): System Demonstrations, Toronto, Canada, (2023.7)",
+          "resource": {
+            "paper": ""
+          }
         },
-        "award": {
-          "name": "委員特別賞",
-          "image": "/images/award.png"
-        }
-      },
-      {
-        "author": "児玉 貴志, 植田 暢大, 大村 和正, 清丸 寛一, 村脇 有吾, 河原 大輔, 黒橋 禎夫",
-        "title": "テキスト生成モデルによる日本語形態素解析",
-        "misc": "言語処理学会 第29回年次大会, 沖縄, (2023.3).",
-        "resource": {
-          "paper": "https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/C2-3.pdf",
-          "code": "https://github.com/ku-nlp/kwja"
-        }
-      },
-      {
-        "author": "植田 暢大, 大村 和正, 児玉 貴志, 清丸 寛一, 村脇 有吾, 河原 大輔 and 黒橋 禎夫",
-        "title": "KWJA：汎用言語モデルに基づく日本語解析器",
-        "misc": "情報処理学会 第253回自然言語処理研究会, 京都, (2022.9).",
-        "resource": {
-          "paper": "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=220232&item_no=1&page_id=13&block_id=8",
-          "code": "https://github.com/ku-nlp/kwja",
-          "slides": "https://speakerdeck.com/nobug/kyoto-waseda-japanese-analyzer"
+        {
+          "author": "Nobuhiro Ueda and Sadao Kurohashi",
+          "title": "Improving Bridging Reference Resolution using Continuous Essentiality from Crowdsourcing",
+          "misc": "Proceedings of the Fifth Workshop on Computational Models of Reference, Anaphora and Coreference (CRAC 2022), (2022.10), Gyeongju, Republic of Korea",
+          "resource": {
+            "paper": "https://aclanthology.org/2022.crac-1.8.pdf",
+            "code": "https://github.com/nobu-g/bridging-resolution",
+            "slides": "/pub/CRAC2022_slides.pdf"
+          }
         },
-        "award": {
-          "name": "優秀研究賞",
-          "image": "/images/award.png"
-        }
-      },
-      {
-        "author": "Nobuhiro Ueda and Sadao Kurohashi",
-        "title": "Improving Bridging Reference Resolution using Continuous Essentiality from Crowdsourcing",
-        "misc": "Proceedings of the Fifth Workshop on Computational Models of Reference, Anaphora and Coreference (CRAC 2022), (2022.10), Gyeongju, Republic of Korea",
-        "resource": {
-          "paper": "https://aclanthology.org/2022.crac-1.8.pdf",
-          "code": "https://github.com/nobu-g/bridging-resolution",
-          "slides": "/pub/CRAC2022_slides.pdf"
-        }
-      },
-      {
-        "author": "Nobuhiro Ueda, Daisuke Kawahara and Sadao Kurohashi",
-        "title": "BERT-based Cohesion Analysis of Japanese Texts",
-        "misc": "Proceedings of the 28th International Conference on Computational Linguistics (COLING 2020), (2020.12)",
-        "resource": {
-          "paper": "/pub/COLING2020.pdf",
-          "code": "https://github.com/nobu-g/cohesion-analysis",
-          "errata": "/pub/COLING2020_errata.pdf"
-        }
-      },
-      {
-        "author": "Akiko Aizawa, Frederic Bergeron, Junjie Chen, Fei Cheng, Katsuhiko Hayashi, Kentaro Inui, Hiroyoshi Ito, Daisuke Kawahara, Masaru Kitsuregawa, Hirokazu Kiyomaru, Masaki Kobayashi, Takashi Kodama, Sadao Kurohashi, Qianying Liu, Masaki Matsubara, Yusuke Miyao, Atsuyuki Morishima, Yugo Murawaki, Kazumasa Omura, Haiyue Song, Eiichiro Sumita, Shinji Suzuki, Ribeka Tanaka, Yu Tanaka, Masashi Toyoda, Nobuhiro Ueda, Honai Ueoka, Masao Utiyama, Ying Zhong",
-        "title": "A System for Worldwide COVID-19 Information Aggregation",
-        "misc": "Proceedings of the 1st Workshop on NLP for COVID-19 (Part 2) at EMNLP 2020, Online, (2020.12)",
-        "resource": {
-          "paper": "/pub/EMNLPWS2020.pdf",
-          "url": "https://lotus.kuee.kyoto-u.ac.jp/NLPforCOVID-19/en"
-        }
-      },
-      {
-        "author": "植田 暢大, 河原 大輔, 黒橋 禎夫",
-        "title": "BERTとRefinementネットワークによる統合的照応・共参照解析",
-        "misc": "言語処理学会 第26回年次大会, 茨城, (2020.3).",
-        "resource": {
-          "paper": "/pub/NLP2020a.pdf"
+        {
+          "author": "Nobuhiro Ueda, Daisuke Kawahara and Sadao Kurohashi",
+          "title": "BERT-based Cohesion Analysis of Japanese Texts",
+          "misc": "Proceedings of the 28th International Conference on Computational Linguistics (COLING 2020), (2020.12)",
+          "resource": {
+            "paper": "/pub/COLING2020.pdf",
+            "code": "https://github.com/nobu-g/cohesion-analysis",
+            "errata": "/pub/COLING2020_errata.pdf"
+          }
         },
-        "award": {
-          "name": "若手奨励賞",
-          "image": "/images/award.png"
+        {
+          "author": "Akiko Aizawa, Frederic Bergeron, Junjie Chen, Fei Cheng, Katsuhiko Hayashi, Kentaro Inui, Hiroyoshi Ito, Daisuke Kawahara, Masaru Kitsuregawa, Hirokazu Kiyomaru, Masaki Kobayashi, Takashi Kodama, Sadao Kurohashi, Qianying Liu, Masaki Matsubara, Yusuke Miyao, Atsuyuki Morishima, Yugo Murawaki, Kazumasa Omura, Haiyue Song, Eiichiro Sumita, Shinji Suzuki, Ribeka Tanaka, Yu Tanaka, Masashi Toyoda, Nobuhiro Ueda, Honai Ueoka, Masao Utiyama, Ying Zhong",
+          "title": "A System for Worldwide COVID-19 Information Aggregation",
+          "misc": "Proceedings of the 1st Workshop on NLP for COVID-19 (Part 2) at EMNLP 2020, Online, (2020.12)",
+          "resource": {
+            "paper": "/pub/EMNLPWS2020.pdf",
+            "url": "https://lotus.kuee.kyoto-u.ac.jp/NLPforCOVID-19/en"
+          }
         }
-      },
-      {
-        "author": "清丸 寛一, 植田 暢大, 児玉 貴志, 田中 佑, 岸本 裕大, 田中 リベカ, 河原 大輔, 黒橋 禎夫",
-        "title": "因果関係グラフ: 構造的言語処理に基づくイベントの原因・結果・解決策の集約",
-        "misc": "言語処理学会 第26回年次大会, 茨城, (2020.3).",
-        "resource": {
-          "paper": "/pub/NLP2020b.pdf"
+      ],
+      "Domestic Conferences": [
+        {
+          "author": "植田 暢大, 波部 英子, 湯口 彰重, 河野 誠也, 川西 康友, 黒橋 禎夫, 吉野 幸一郎",
+          "title": "実世界における総合的参照解析を目的としたマルチモーダル対話データセットの構築",
+          "misc": "言語処理学会 第29回年次大会, 沖縄, (2023.3).",
+          "resource": {
+            "paper": "https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/H12-1.pdf",
+            "slides": "/pub/NLP2023_slides.pdf"
+          },
+          "award": {
+            "name": "委員特別賞",
+            "image": "/images/award.png"
+          }
+        },
+        {
+          "author": "児玉 貴志, 植田 暢大, 大村 和正, 清丸 寛一, 村脇 有吾, 河原 大輔, 黒橋 禎夫",
+          "title": "テキスト生成モデルによる日本語形態素解析",
+          "misc": "言語処理学会 第29回年次大会, 沖縄, (2023.3).",
+          "resource": {
+            "paper": "https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/C2-3.pdf",
+            "code": "https://github.com/ku-nlp/kwja"
+          }
+        },
+        {
+          "author": "植田 暢大, 大村 和正, 児玉 貴志, 清丸 寛一, 村脇 有吾, 河原 大輔 and 黒橋 禎夫",
+          "title": "KWJA：汎用言語モデルに基づく日本語解析器",
+          "misc": "情報処理学会 第253回自然言語処理研究会, 京都, (2022.9).",
+          "resource": {
+            "paper": "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=220232&item_no=1&page_id=13&block_id=8",
+            "code": "https://github.com/ku-nlp/kwja",
+            "slides": "https://speakerdeck.com/nobug/kyoto-waseda-japanese-analyzer"
+          },
+          "award": {
+            "name": "優秀研究賞",
+            "image": "/images/award.png"
+          }
+        },
+        {
+          "author": "植田 暢大, 河原 大輔, 黒橋 禎夫",
+          "title": "BERTとRefinementネットワークによる統合的照応・共参照解析",
+          "misc": "言語処理学会 第26回年次大会, 茨城, (2020.3).",
+          "resource": {
+            "paper": "/pub/NLP2020a.pdf"
+          },
+          "award": {
+            "name": "若手奨励賞",
+            "image": "/images/award.png"
+          }
+        },
+        {
+          "author": "清丸 寛一, 植田 暢大, 児玉 貴志, 田中 佑, 岸本 裕大, 田中 リベカ, 河原 大輔, 黒橋 禎夫",
+          "title": "因果関係グラフ: 構造的言語処理に基づくイベントの原因・結果・解決策の集約",
+          "misc": "言語処理学会 第26回年次大会, 茨城, (2020.3).",
+          "resource": {
+            "paper": "/pub/NLP2020b.pdf"
+          }
         }
-      }
-    ],
+      ]
+    },
     "experience": {
       "hackathon": [
         {
