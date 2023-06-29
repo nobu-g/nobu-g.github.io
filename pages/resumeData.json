@@ -82,7 +82,8 @@
         "misc": "情報処理学会 第253回自然言語処理研究会, 京都, (2022.9).",
         "resource": {
           "paper": "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=220232&item_no=1&page_id=13&block_id=8",
-          "code": "https://github.com/ku-nlp/kwja"
+          "code": "https://github.com/ku-nlp/kwja",
+          "slides": "https://speakerdeck.com/nobug/kyoto-waseda-japanese-analyzer"
         },
         "award": {
           "name": "優秀研究賞",
@@ -96,7 +97,7 @@
         "resource": {
           "paper": "https://aclanthology.org/2022.crac-1.8.pdf",
           "code": "https://github.com/nobu-g/bridging-resolution",
-          "slides": "https://speakerdeck.com/nobug/kyoto-waseda-japanese-analyzer"
+          "slides": "/pub/CRAC2022_slides.pdf"
         }
       },
       {
@@ -229,7 +230,8 @@
           "years": "March 2023",
           "description": "Gave a lightning talk on Japanese foundation models I developed.",
           "resource": {
-            "website": "https://jedworkshop.github.io/JLR2023/program/"
+            "website": "https://jedworkshop.github.io/JLR2023/program/",
+            "slides": "/pub/JLR2023.pdf"
           }
         },
         {
