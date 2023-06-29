@@ -244,12 +244,13 @@
           }
         },
         {
-          "title": "15th ICT innovation",
-          "place": "Kyoto University",
+          "title": "自然言語の意味理解に向けた名詞や述語間の関係解析",
+          "place": "15th ICT innovation, Kyoto University",
           "years": "February 2021",
           "description": "Gave a poster presentation on my research.",
           "resource": {
-            "website": "https://ict-nw.i.kyoto-u.ac.jp/ict-innovation/15th/"
+            "website": "https://ict-nw.i.kyoto-u.ac.jp/ict-innovation/15th/",
+            "poster": "/pub/ICT_innovation_16th.pdf"
           }
         }
       ]
