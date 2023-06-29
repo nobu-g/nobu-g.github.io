@@ -209,14 +209,14 @@
           "title": "M3, Inc.",
           "place": "Akasaka Intercity, Tokyo",
           "years": "September 2019",
-          "description": "Worked on improving recommendation system for medical articles",
+          "description": "Worked on improving recommendation system for medical articles.",
           "resource": {}
         },
         {
           "title": "LINE",
           "place": "LINE KYOTO, Kyoto",
           "years": "August 2019",
-          "description": "Joined a hackathon to develop an application like Akinator, which runs on LINE",
+          "description": "Joined a hackathon to develop an application like Akinator, which runs on LINE.",
           "resource": {
             "report": "https://engineering.linecorp.com/ja/blog/kyoto-intern2019/"
           }
@@ -227,7 +227,7 @@
           "title": "日本語DeBERTaモデルの構築 (JLR2023)",
           "place": "Okinawa Convention Center, Okinawa",
           "years": "March 2023",
-          "description": "Gave a lightning talk on Japanese foundation models I developed",
+          "description": "Gave a lightning talk on Japanese foundation models I developed.",
           "resource": {
             "website": "https://jedworkshop.github.io/JLR2023/program/"
           }
@@ -236,7 +236,7 @@
           "title": "15th ICT innovation",
           "place": "Kyoto University",
           "years": "February 2021",
-          "description": "Gave a poster presentation on my research",
+          "description": "Gave a poster presentation on my research.",
           "resource": {
             "website": "https://ict-nw.i.kyoto-u.ac.jp/ict-innovation/15th/"
           }

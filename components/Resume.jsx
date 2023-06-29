@@ -9,7 +9,7 @@ const Resume = ({data}) => {
   let honors = null;
 
   if (data) {
-    education = data.education.map((education) => {
+    education = data.education.map(education => {
       return (
         <div key={education.school}>
           <h3 className={style.h3}>{education.school}</h3>
@@ -22,7 +22,7 @@ const Resume = ({data}) => {
       );
     });
 
-    publications = data.publications.map((publication) => {
+    publications = data.publications.map(publication => {
       return (
         <div key={publication.title}>
           <h3>{publication.title}</h3>
