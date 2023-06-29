@@ -5,7 +5,7 @@ import style from "../styles/Resume.module.scss";
 const Resume = ({data}) => {
   let education = null;
   let publications = null;
-  let experience = null;
+  let experiences = null;
   let honors = null;
 
   if (data) {
@@ -32,11 +32,11 @@ const Resume = ({data}) => {
             {publication.misc}
             <br/>
             {
-                Object.entries(publication.resource).map(([kind, url]) => (
-              <span key={kind}>
+              Object.entries(publication.resource).map(([kind, url]) => (
+                <span key={kind}>
                 [{url ? <a href={url}>{kind}</a> : kind}]
-              </span>
-            ))
+                </span>
+              ))
             }
             {publication.award && <>
               <img
@@ -53,75 +53,37 @@ const Resume = ({data}) => {
       );
     });
 
-    const ta = data.experience["teaching assistant"].map((ta) => {
-      return (
-        <li key={ta.title}>
-          <h4>{ta.title}</h4>
-          <p className={style.info}>
-            {ta.place}
-            <span>&bull;</span> <em className={style.date}>{ta.years}</em>
-          </p>
-          <p>{ta.description}</p>
-        </li>
-      );
-    });
-
-    const intern = data.experience["internship"].map((intern) => {
-      return (
-        <li key={intern.company}>
-          <h4>{intern.company}</h4>
-          <p className={style.info}>
-            {intern.place}
-            <span>&bull;</span> <em className={style.date}>{intern.years}</em>
-            <br/>
-            {intern.description}
-            <br/>
-            {Object.entries(intern.resource).map(([kind, url]) => (
-              <span key={kind}>
-                [<a href={url}>{kind}</a>]
-              </span>
-            ))}
-          </p>
-        </li>
-      );
-    });
-
-    const presentation = data.experience["presentation and talks"].map(pt => {
-      return (
-        <li key={pt.venue}>
-          <h4>{pt.venue}</h4>
-          <p className={style.info}>
-            {pt.place}
-            <span>&bull;</span> <em className={style.date}>{pt.years}</em>
-            <br/>
-            {pt.description}
-            <br/>
-            {Object.entries(pt.resource).map(([kind, url]) => (
-              <span key={kind}>
-                [<a href={url}>{kind}</a>]
-              </span>
-            ))}
-          </p>
-        </li>
-      );
-    });
-
-    experience = (
-      <>
-        <div key="teaching assistant">
-          <h3>Teaching Assistant</h3>
-          <ul>{ta}</ul>
+    experiences = Object.entries(data.experience).map(
+      ([kind, items]) => (
+        <div key={kind}>
+          <h3>{kind}</h3>
+          <ul>
+            {
+              items.map(item => (
+                <li key={item.title}>
+                  <h4>{item.title}</h4>
+                  <p className={style.info}>
+                    {item.place}
+                    <span>&bull;</span>
+                    <em className={style.date}>{item.years}</em>
+                    <br/>
+                    {item.description}
+                    <br/>
+                    {
+                      Object.entries(item.resource).map(([kind, url]) => (
+                        <span key={kind}>
+                        [{url ? <a href={url}>{kind}</a> : kind}]
+                        </span>
+                      ))
+                    }
+                  </p>
+                </li>
+              ))
+            }
+          </ul>
         </div>
-        <div key="intern">
-          <h3>Internship</h3>
-          <ul>{intern}</ul>
-        </div>
-        <div key="presentation and talks">
-          <h3>Presentation & Talk</h3>
-          <ul>{presentation}</ul>
-        </div>
-      </>
-    );
+      )
+    )
 
     honors = data.honors.map(honor => {
       return (
@@ -178,7 +140,7 @@ const Resume = ({data}) => {
             <span>Experience</span>
           </h1>
         </div>
-        <div className={"nine columns " + style["main-col"]}>{experience}</div>
+        <div className={"nine columns " + style["main-col"]}>{experiences}</div>
       </div>
 
       <div className={"row " + style.honors}>

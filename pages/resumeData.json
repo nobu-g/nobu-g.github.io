@@ -140,36 +140,50 @@
       }
     ],
     "experience": {
+      "hackathon": [
+        {
+          "title": "16th Young Researcher Association for NLP Studies (YANS) Symposium Hackathon",
+          "place": "online",
+          "years": "August 2021",
+          "description": "",
+          "resource": {}
+        }
+      ],
       "teaching assistant": [
         {
           "title": "C Programming Class",
           "place": "Kyoto University, Kyoto",
           "years": "April 2021 - July 2021",
-          "description": ""
+          "description": "",
+          "resource": {}
         },
         {
           "title": "「人を知る」人工知能講座2021",
           "place": "Online",
           "years": "November 2021",
-          "description": ""
+          "description": "",
+          "resource": {}
         },
         {
           "title": "「人を知る」人工知能講座2020",
           "place": "Online",
           "years": "November 2020",
-          "description": ""
+          "description": "",
+          "resource": {}
         },
         {
           "title": "「人を知る」人工知能講座2019",
           "place": "Shin-marunouchi Building, Tokyo",
           "years": "November 2019",
-          "description": ""
+          "description": "",
+          "resource": {}
         },
         {
           "title": "C Programming Class",
           "place": "Kyoto University, Kyoto",
           "years": "April 2019 - July 2019",
-          "description": ""
+          "description": "",
+          "resource": {}
         }
       ],
       "internship": [
