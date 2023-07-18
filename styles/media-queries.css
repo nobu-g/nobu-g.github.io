@@ -73,6 +73,7 @@
     ------------------------------------------------------------------- */
     #resume h1 {
         font: 16px/24px 'opensans-bold', sans-serif;
+        margin-bottom: 1.5em;
     }
 
     #resume .main-col {
@@ -284,7 +285,7 @@
         padding-right: 30px;
     }
 
-    #resume h3, #resume .info {
+    #resume .info {
         text-align: center;
     }
 
