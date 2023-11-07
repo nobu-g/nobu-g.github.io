@@ -3,4 +3,5 @@ module.exports = {
   images: {
     loader: 'custom',
   },
+  output: 'export',
 }
