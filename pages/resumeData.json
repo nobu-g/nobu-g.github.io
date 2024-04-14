@@ -1,16 +1,16 @@
 {
   "main": {
     "name": "Nobuhiro Ueda",
-    "occupation": "Kyoto University",
-    "description": "I am a Ph.D. student at Kyoto University. My research interests are in natural language processing, especially basic analyses of language semantics.",
+    "occupation": "NEC Corporation",
+    "description": "I am a researcher at the Data Science Research Laboratory, NEC Corporation. I am working on R&D of large language models and natural language processing.",
     "image": "profile.jpg",
     "email": "ueda at nlp.ist.i.kyoto-u.ac.jp",
     "phone": "555-555-5555",
     "address": {
       "street": "(Your Street)",
-      "city": "(Your City)",
-      "state": "Kyoto",
-      "zip": "606-8501"
+      "city": "Kawasaki",
+      "state": "Kanagawa",
+      "zip": "211-0011"
     },
     "website": "https://nobu-g.github.io/",
     "social": [
@@ -35,9 +35,15 @@
     "education": [
       {
         "school": "Graduate School of Informatics, Kyoto University",
+        "degree": "Ph.D. of Informatics",
+        "graduated": "April 2021 - March 2024",
+        "description": "Worked on research about natural language processing."
+      },
+      {
+        "school": "Graduate School of Informatics, Kyoto University",
         "degree": "Master of Informatics",
-        "graduated": "April 2019 - Present",
-        "description": "Working on research about Natural Language Processing."
+        "graduated": "April 2019 - March 2021",
+        "description": "Worked on research about natural language processing."
       },
       {
         "school": "Faculty of Engineering, Kyoto University",
@@ -48,6 +54,26 @@
     ],
     "publications": {
       "International Conferences and Workshops (Peer-reviewed)": [
+        {
+          "author": "Nobuhiro Ueda, Hideko Habe, Yoko Matsui, Akishige Yuguchi, Seiya Kawano, Yasutomo Kawanishi, Sadao Kurohashi and Koichiro Yoshino",
+          "title": "J-CRe3: A Japanese Conversation Dataset for Real-world Reference Resolution",
+          "misc": "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024), Turin, Italy, (2024.5).",
+          "resource": {
+            "paper": "https://arxiv.org/abs/2403.19259",
+            "dataset": "https://github.com/riken-grp/J-CRe3",
+            "code": "https://github.com/riken-grp/multimodal-reference"
+          }
+        },
+        {
+          "author": "Yikun Sun, Zhen Wan, Nobuhiro Ueda, Sakiko Yahata, Fei Cheng, Chenhui Chu and Sadao Kurohashi",
+          "title": "Rapidly Developing High-quality Instruction Data and Evaluation Benchmark for Large Language Models with Minimal Human Effort: A Case Study on Japanese",
+          "misc": "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024), Turin, Italy, (2024.5).",
+          "resource": {
+            "paper": "https://arxiv.org/abs/2403.03690",
+            "dataset": "https://github.com/hitoshizuku7/awesome-Ja-self-instruct",
+            "code": "https://github.com/ku-nlp/ja-vicuna-qa-benchmark"
+          }
+        },
         {
           "author": "Nobuhiro Ueda, Kazumasa Omura, Takashi Kodama, Hirokazu Kiyomaru, Yugo Murawaki, Daisuke Kawahara and Sadao Kurohashi",
           "title": "KWJA: A Unified Japanese Analyzer Based on Foundation Models",
@@ -91,6 +117,24 @@
         }
       ],
       "Domestic Conferences": [
+        {
+          "author": "植田 暢大, 波部 英子, 松井 陽子, 湯口 彰重, 河野 誠也, 川西 康友, 黒橋 禎夫, 吉野 幸一郎",
+          "title": "実世界対話におけるフレーズグラウンディングモデルの評価と分析",
+          "misc": "言語処理学会 第30回年次大会, 神戸, (2024.3).",
+          "resource": {
+            "paper": "https://www.anlp.jp/proceedings/annual_meeting/2024/pdf_dir/E1-4.pdf",
+            "slides": "/pub/NLP2024a_slides.pdf"
+          }
+        },
+        {
+          "author": "Namgi Han, 植田 暢大, 大嶽 匡俊, 勝又 智, 鎌田 啓輔, 清丸 寛一, 児玉 貴志, 菅原 朔, Bowen Chen, 松田 寛, 宮尾 祐介, 村脇 有吾, 劉 弘毅",
+          "title": "llm-jp-eval: 日本語大規模言語モデルの自動評価ツール",
+          "misc": "言語処理学会 第30回年次大会, 神戸, (2024.3).",
+          "resource": {
+            "paper": "https://www.anlp.jp/proceedings/annual_meeting/2024/pdf_dir/A8-2.pdf",
+            "slides": "/pub/NLP2024b_slides.pdf"
+          }
+        },
         {
           "author": "植田 暢大, 波部 英子, 湯口 彰重, 河野 誠也, 川西 康友, 黒橋 禎夫, 吉野 幸一郎",
           "title": "実世界における総合的参照解析を目的としたマルチモーダル対話データセットの構築",
@@ -150,6 +194,17 @@
       ]
     },
     "experience": {
+      "researcher": [
+        {
+          "title": "NEC Corporation",
+          "place": "Kawasaki, Kanagawa",
+          "years": "April 2024 - Present",
+          "description": "",
+          "resource": {
+            "website": "https://www.nec.com/"
+          }
+        }
+      ],
       "hackathon": [
         {
           "title": "16th Young Researcher Association for NLP Studies (YANS) Symposium Hackathon",
