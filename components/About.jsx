@@ -27,9 +27,8 @@ const About = ({data}) => {
           <h2>About Me</h2>
 
           <p>
-            I am a Ph.D. student at
-            Kurohashi-Chu-Murawaki Lab., Kyoto University, Japan. I&apos;m interested in how
-            we can make computers understand natural language. Currently, I&apos;m
+            I am a researcher at the Data Science Research Laboratory, NEC Corporation, Japan. I&apos;m interested in how
+            we can make computers understand natural language. Previously, I was
             working on a research about anaphora resolution in Japanese. Try{" "}
             <a
               href="https://lotus.kuee.kyoto-u.ac.jp/cohesion-analysis/pub/"
@@ -47,9 +46,9 @@ const About = ({data}) => {
                 <span>{name}</span>
                 <br/>
                 <span>
-                  Kurohashi-Chu-Murawaki Lab.
+                  NEC Tamagawa Office, NEC Corporation
                   <br/>
-                  Yoshida-honmachi, Sakyo-ku, Kyoto, 606-8501, Japan
+                  Nakahara-ku Shimonumabe 1753, Kawasaki, Kanagawa, 211-0011, Japan
                 </span>
                 <br/>
                 {/*<span>{phone}</span><br/>*/}
