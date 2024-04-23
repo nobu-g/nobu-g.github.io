@@ -27,7 +27,7 @@ const About = ({data}) => {
           <h2>About Me</h2>
 
           <p>
-            I am a researcher at the Data Science Research Laboratory, NEC Corporation, Japan. I&apos;m interested in how
+            I am a researcher at the Data Science Laboratory, NEC Corporation, Japan. I&apos;m interested in how
             we can make computers understand natural language. Previously, I was
             working on a research about anaphora resolution in Japanese. Try{" "}
             <a

@@ -2,9 +2,9 @@
   "main": {
     "name": "Nobuhiro Ueda",
     "occupation": "NEC Corporation",
-    "description": "I am a researcher at the Data Science Research Laboratory, NEC Corporation. I am working on R&D of large language models and natural language processing.",
+    "description": "I am a researcher at the Data Science Laboratory, NEC Corporation. I am working on R&D of large language models and natural language processing.",
     "image": "profile.jpg",
-    "email": "nobuhiro-ueda at nec.com",
+    "email": "ueda at nlp.ist.i.kyoto-u.ac.jp",
     "phone": "555-555-5555",
     "address": {
       "street": "(Your Street)",
