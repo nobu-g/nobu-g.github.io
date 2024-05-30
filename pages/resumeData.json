@@ -61,7 +61,8 @@
           "resource": {
             "paper": "https://arxiv.org/abs/2403.19259",
             "dataset": "https://github.com/riken-grp/J-CRe3",
-            "code": "https://github.com/riken-grp/multimodal-reference"
+            "code": "https://github.com/riken-grp/multimodal-reference",
+            "poster": "/pub/LREC-COLING2024_poster.pdf"
           }
         },
         {
