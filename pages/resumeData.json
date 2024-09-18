@@ -117,6 +117,16 @@
           }
         }
       ],
+      "Domestic Journals": [
+        {
+          "author": "植田 暢大, 波部 英子, 松井 陽子, 湯口 彰重, 河野 誠也, 川西 康友, 黒橋 禎夫, 吉野 幸一郎",
+          "title": "J-CRe3: 実世界における参照関係解決のための日本語対話データセット",
+          "misc": "自然言語処理, Vol31, No.3, (2024.9).",
+          "resource": {
+            "paper": "https://www.jstage.jst.go.jp/article/jnlp/31/3/31_1107/_pdf/-char/ja"
+          }
+        }
+      ],
       "Domestic Conferences": [
         {
           "author": "植田 暢大, 波部 英子, 松井 陽子, 湯口 彰重, 河野 誠也, 川西 康友, 黒橋 禎夫, 吉野 幸一郎",
