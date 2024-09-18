@@ -14,12 +14,12 @@ const Header = ({data, section, opaque}) => {
       return (
         <li key={network.name}>
           <Link href={network.url}>
-            <a>
-              <FaIcon/>
-            </a>
+
+            <FaIcon/>
+
           </Link>
         </li>
-      )
+      );
     });
   }
 
@@ -67,10 +67,10 @@ const Header = ({data, section, opaque}) => {
       </div>
 
       <p className={style['scrolldown']}>
-        <Link href="#about">
-          <a className="smoothscroll">
-            <IoIosArrowDropdownCircle/>
-          </a>
+        <Link href="#about" className="smoothscroll">
+
+          <IoIosArrowDropdownCircle/>
+
         </Link>
       </p>
     </header>

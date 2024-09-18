@@ -11,12 +11,12 @@ const Footer = ({data}) => {
       return (
         <li key={network.name}>
           <Link href={network.url}>
-            <a>
-              <FaIcon/>
-            </a>
+
+            <FaIcon/>
+
           </Link>
         </li>
-      )
+      );
     });
   }
 
@@ -37,10 +37,10 @@ const Footer = ({data}) => {
           </ul>
         </div>
         <div id="go-top">
-          <Link href="#home">
-            <a className="smoothscroll" title="Back to Top">
-              <FaChevronUp/>
-            </a>
+          <Link href="#home" className="smoothscroll" title="Back to Top">
+
+            <FaChevronUp/>
+
           </Link>
         </div>
       </div>
