@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 import style from "../styles/Resume.module.scss";
 
@@ -58,7 +59,7 @@ const Resume = ({data}) => {
                   }
                   {
                     item.award && <>
-                      <img
+                      <Image
                         src={item.award.image}
                         height="16"
                         width="16"
@@ -100,7 +101,7 @@ const Resume = ({data}) => {
                     }
                     {
                       item.award && <>
-                        <img
+                        <Image
                           src={item.award.image}
                           height="16"
                           width="16"

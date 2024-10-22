@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Portfolio = ({data}) => {
   let projects = null;
@@ -9,7 +10,7 @@ const Portfolio = ({data}) => {
         <div key={project.title} className="columns portfolio-item">
           <div className="item-wrap">
             <a href={project.url} title={project.title}>
-              <img
+              <Image
                 alt={project.title}
                 src={projectImage}
               />

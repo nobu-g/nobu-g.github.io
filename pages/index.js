@@ -38,7 +38,7 @@ const Home = ({resumeData}) => {
 
   return (
     // <div className={styles.container}>
-    <div className="App">
+    (<div className="App">
       <Head>
         <title>Nobuhiro Ueda</title>
         <meta
@@ -49,7 +49,6 @@ const Home = ({resumeData}) => {
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <Header data={config.main} section={section} opaque={opaque}/>
-
       <main>
         <Waypoint onEnter={({previousPosition}) => {
           if (previousPosition === Waypoint.above) {
@@ -89,8 +88,8 @@ const Home = ({resumeData}) => {
         <Portfolio data={config.portfolio}/>
       </main>
       <Footer data={config.main}/>
-    </div>
-  )
+    </div>)
+  );
 };
 
 export default Home;
