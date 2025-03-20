@@ -2,7 +2,7 @@
   "main": {
     "name": "Nobuhiro Ueda",
     "occupation": "NEC Corporation",
-    "description": "I am a researcher at the Data Science Laboratory, NEC Corporation. I am working on R&D of large language models and natural language processing.",
+    "description": "I am a researcher at the Data Science Laboratory, NEC Corporation. I received my Ph.D. in Informatics. I am working on R&D of large language models and natural language processing.",
     "image": "profile.jpg",
     "email": "ueda at nlp.ist.i.kyoto-u.ac.jp",
     "phone": "555-555-5555",
@@ -129,6 +129,15 @@
       ],
       "Domestic Conferences": [
         {
+          "author": "稲積 駿, 植田 暢大, 吉野 幸一郎",
+          "title": "実世界対話における参照関係の統合的解析",
+          "misc": "言語処理学会 第31回年次大会, 長崎, (2025.3).",
+          "resource": {
+            "paper": "https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q7-13.pdf",
+            "poster": "/pub/NLP2025_poster.pdf"
+          }
+        },
+        {
           "author": "植田 暢大, 波部 英子, 松井 陽子, 湯口 彰重, 河野 誠也, 川西 康友, 黒橋 禎夫, 吉野 幸一郎",
           "title": "実世界対話におけるフレーズグラウンディングモデルの評価と分析",
           "misc": "言語処理学会 第30回年次大会, 神戸, (2024.3).",
@@ -201,6 +210,13 @@
           "resource": {
             "paper": "/pub/NLP2020b.pdf"
           }
+        }
+      ],
+      "Ph.D. Thesis": [
+        {
+          "author": "Nobuhiro Ueda",
+          "title": "Cohesion Analysis of Textual and Visual Entities: Enhancing Accuracy and Comprehensiveness",
+          "misc": "Ph.D. Thesis, Kyoto University, (2025.3)."
         }
       ]
     },
