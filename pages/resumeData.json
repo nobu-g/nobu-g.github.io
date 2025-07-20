@@ -55,6 +55,13 @@
     "publications": {
       "International Conferences and Workshops (Peer-reviewed)": [
         {
+          "author": "Shun Inadumi, Nobuhiro Ueda, Koichiro Yoshino",
+          "title": "Disambiguating Reference in Visually Grounded Dialogues through Joint Modeling of Textual and Multimodal Semantic Structures",
+          "misc": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025), Vienna, Austria, (2025.7).",
+          "resource": {
+          }
+        },
+        {
           "author": "Nobuhiro Ueda, Hideko Habe, Yoko Matsui, Akishige Yuguchi, Seiya Kawano, Yasutomo Kawanishi, Sadao Kurohashi and Koichiro Yoshino",
           "title": "J-CRe3: A Japanese Conversation Dataset for Real-world Reference Resolution",
           "misc": "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024), Turin, Italy, (2024.5).",
@@ -209,6 +216,16 @@
           "misc": "言語処理学会 第26回年次大会, 茨城, (2020.3).",
           "resource": {
             "paper": "/pub/NLP2020b.pdf"
+          }
+        }
+      ],
+      "Preprints": [
+        {
+          "author": "Yuyang Dong, Nobuhiro Ueda, Krisztián Boros, Daiki Ito, Takuya Sera, Masafumi Oyamada",
+          "title": "SCAN: Semantic Document Layout Analysis for Textual and Visual Retrieval-Augmented Generation",
+          "misc": "arXiv preprint arXiv:2505.14381, (2025.5).",
+          "resource": {
+            "paper": "https://arxiv.org/pdf/2505.14381"
           }
         }
       ],
