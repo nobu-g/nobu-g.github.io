@@ -31,6 +31,8 @@ jobs:
     # プロジェクトルート直下に.nextディレクトリができる
     - name: build
       run: npm run build
+      env:
+        NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
 
     # しかしGitHub Pagesの仕様として_から始まるディレクトリが見えず404となる
     # つまりHTMLからJSを読み込めない

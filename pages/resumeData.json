@@ -393,24 +393,32 @@
         "title": "kwja",
         "category": "A unified language analyzer for Japanese",
         "image": "kwja.png",
+        "width": 900,
+        "height": 738,
         "url": "https://github.com/ku-nlp/kwja"
       },
       {
         "title": "cohesion-analysis",
         "category": "A BERT based Japanese cohesion analyzer",
         "image": "cohesion-analysis.png",
+        "width": 980,
+        "height": 804,
         "url": "https://github.com/nobu-g/cohesion-analysis"
       },
       {
         "title": "10cc",
         "category": "C compiler from scratch",
         "image": "10cc.jpg",
+        "width": 1266,
+        "height": 1040,
         "url": "https://github.com/nobu-g/10cc"
       },
       {
         "title": "Music-Game",
         "category": "Rhythm video game for iOS",
         "image": "music-game-kari.png",
+        "width": 700,
+        "height": 574,
         "url": "https://github.com/chomin/Music-Game"
       }
     ]

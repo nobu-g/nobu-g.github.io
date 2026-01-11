@@ -35,7 +35,7 @@
     width: 100%;
 
     h1 {
-        font: 90px/1.1em 'Open Sans', sans-serif;
+        font: 90px/1.1em var(--font-sans);
         font-weight: bold;
         color: #fff;
         letter-spacing: -2px;
@@ -44,7 +44,7 @@
     }
 
     h3 {
-        font: 18px/1.9em 'Libre Baskerville', serif;
+        font: 18px/1.9em var(--font-serif);
         color: #A8A8A8;
         margin: 0 auto;
         width: 70%;
@@ -117,7 +117,7 @@
 
 /* nav-wrap */
 .nav-wrap {
-    font: 12px 'Open Sans', sans-serif;
+    font: 12px var(--font-sans);
     font-weight: bold;
     width: 100%;
     text-transform: uppercase;

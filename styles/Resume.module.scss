@@ -33,7 +33,7 @@
 /*}*/
 
 .h3 {
-    font: 25px/30px "Open Sans", sans-serif;
+    font: 25px/30px var(--font-sans);
     font-weight: bold;
     text-align: left;
 }
@@ -53,7 +53,7 @@
 }
 
 .education .info {
-    font: 16px/24px 'Libre Baskerville', serif;
+    font: 16px/24px var(--font-serif);
     font-style: italic;
     color: #6e7881;
     margin-bottom: 18px;
@@ -66,13 +66,13 @@
 }
 
 .date {
-    font: 15px/24px "Open Sans", sans-serif;
+    font: 15px/24px var(--font-sans);
     margin-top: 6px;
 }
 
 .publication {
     h3 {
-        font: 25px/30px "Open Sans", "Noto Sans JP", sans-serif;
+        font: 25px/30px var(--font-sans);
         font-weight: 700;
     }
 
@@ -82,7 +82,7 @@
 }
 
 .experience h4 {
-    font: 20px "opensans", "Noto Sans JP", sans-serif;
+    font: 20px var(--font-sans);
     font-weight: 400;
 }
 

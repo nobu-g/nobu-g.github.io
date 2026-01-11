@@ -147,7 +147,7 @@ html {
 
 body {
     background: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-sans, sans-serif);
     font-weight: normal;
     font-size: 15px;
     line-height: 30px;
@@ -163,7 +163,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     color: #313131;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-sans);
     font-weight: bold;
 }
 
@@ -218,7 +218,7 @@ p img {
 }
 
 p.lead {
-    font: 19px/36px 'Open Sans', sans-serif;
+    font: 19px/36px var(--font-sans);
     font-weight: lighter;
     margin-bottom: 18px;
 }
@@ -226,11 +226,12 @@ p.lead {
 /* for 'em' and 'strong' tags, font-size and line-height should be same with
 the body tag due to rendering problems in some browsers */
 em {
-    font: 15px/30px 'opensans-italic', sans-serif;
+    font: 15px/30px var(--font-sans);
+    font-style: italic;
 }
 
 strong, b {
-    font: 15px/30px 'Open Sans', sans-serif;
+    font: 15px/30px var(--font-sans);
     font-weight: bold;
 }
 
@@ -260,7 +261,7 @@ blockquote:before {
 }
 
 blockquote p {
-    font-family: 'Libre Baskerville', serif;
+    font-family: var(--font-serif);
     font-style: italic;
     padding: 0;
     font-size: 18px;
@@ -330,7 +331,7 @@ blockquote cite a:visited {
 
 /* Abbreviations */
 abbr {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-sans);
     font-weight: bold;
     font-variant: small-caps;
     text-transform: lowercase;
@@ -348,7 +349,7 @@ abbr:hover {
     margin: 0;
     padding: 14px 6px 0 0;
     font-size: 84px;
-    font-family: /* Copperplate */ 'Open Sans', sans-serif;
+    font-family: /* Copperplate */ var(--font-sans);
     font-weight: bold;
     line-height: 60px;
     text-indent: 0;
@@ -470,7 +471,7 @@ li p {
 .stats-tabs li a {
     display: inline-block;
     font-size: 22px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-sans);
     font-weight: bold;
     border: none;
     color: #313131;
@@ -484,7 +485,7 @@ li p {
     display: block;
     margin: 6px 0 0 0;
     font-size: 13px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-sans);
     color: #8B9798;
 }
 
@@ -557,7 +558,7 @@ dd {
 }
 
 .pagination .page-numbers {
-    font: 15px/18px 'Open Sans', sans-serif;
+    font: 15px/18px var(--font-sans);
     font-weight: bold;
     display: inline-block;
     padding: 6px 10px;
@@ -620,7 +621,7 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-    font: 16px/30px 'Open Sans', sans-serif;
+    font: 16px/30px var(--font-sans);
     font-weight: bold;
     background: #11ABB0;
     display: inline-block;
@@ -729,7 +730,7 @@ textarea {
 
 label,
 legend {
-    font: 16px/24px 'Open Sans', sans-serif;
+    font: 16px/24px var(--font-sans);
     font-weight: bold;
     margin: 12px 0;
     color: #3d4145;
@@ -739,7 +740,7 @@ legend {
 label span,
 legend span {
     color: #8B9798;
-    font: 14px/24px 'opensans-regular', sans-serif;
+    font: 14px/24px var(--font-sans);
 }
 
 input[type="checkbox"],

@@ -37,7 +37,7 @@ body {
 
 /* nav-wrap */
 #nav-wrap {
-    font: 12px 'Open Sans', sans-serif;
+    font: 12px var(--font-sans);
     font-weight: bold;
     width: 100%;
     text-transform: uppercase;
@@ -112,7 +112,7 @@ ul#nav li.current a {
 }
 
 #portfolio h1 {
-    font: 15px/24px 'opensans-semibold', sans-serif;
+    font: 15px/24px var(--font-sans);
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
@@ -196,13 +196,13 @@ ul#nav li.current a {
 }
 
 .portfolio-item .portfolio-item-meta h5 {
-    font: 14px/21px 'Open Sans', sans-serif;
+    font: 14px/21px var(--font-sans);
     font-weight: bold;
     color: #fff;
 }
 
 .portfolio-item .portfolio-item-meta p {
-    font: 12px/18px 'opensans-light', sans-serif;
+    font: 12px/18px var(--font-sans);
     color: #c6c7c7;
     margin-bottom: 0;
 }
@@ -253,7 +253,7 @@ ul#nav li.current a {
 }
 
 #call-to-action h1 {
-    font: 18px/24px 'Open Sans', sans-serif;
+    font: 18px/24px var(--font-sans);
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -280,7 +280,7 @@ ul#nav li.current a {
 }
 
 #call-to-action h2 {
-    font: 28px/36px 'Open Sans', sans-serif;
+    font: 28px/36px var(--font-sans);
     font-weight: bold;
     color: #EBEEEE;
     margin-bottom: 6px;
@@ -308,7 +308,7 @@ call-to-action .button {
 }
 
 #call-to-action p span {
-    font-family: 'opensans-semibold', sans-serif;
+    font-family: var(--font-sans);
     color: #D8D8D8;
 }
 
@@ -485,7 +485,7 @@ call-to-action .button {
 }
 
 #contact h1 {
-    font: 18px/24px 'Open Sans', sans-serif;
+    font: 18px/24px var(--font-sans);
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -509,14 +509,14 @@ call-to-action .button {
 }
 
 #contact h4 {
-    font: 16px/24px 'Open Sans', sans-serif;
+    font: 16px/24px var(--font-sans);
     font-weight: bold;
     color: #EBEEEE;
     margin-bottom: 6px;
 }
 
 #contact p.lead {
-    font: 18px/36px 'opensans-light', sans-serif;
+    font: 18px/36px var(--font-sans);
     padding-right: 3%;
 }
 
@@ -531,7 +531,7 @@ call-to-action .button {
 }
 
 #contact label {
-    font: 15px/24px 'Open Sans', sans-serif;
+    font: 15px/24px var(--font-sans);
     font-weight: bold;
     margin: 12px 0;
     color: #EBEEEE;
@@ -630,7 +630,7 @@ call-to-action .button {
 }
 
 #twitter li b a {
-    font: 13px/36px 'opensans-regular', Sans-serif;
+    font: 13px/36px var(--font-sans);
     color: #474747 !important;
     border: none;
 }

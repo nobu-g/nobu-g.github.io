@@ -13,6 +13,9 @@ const Portfolio = ({data}) => {
               <Image
                 alt={project.title}
                 src={projectImage}
+                width={project.width}
+                height={project.height}
+                sizes="(max-width: 767px) 100vw, (max-width: 900px) 50vw, 25vw"
               />
               <div className="overlay">
                 <div className="portfolio-item-meta">
