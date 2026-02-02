@@ -1,21 +1,23 @@
-import React from "react";
-import Image from "./Image";
+import type { MainData } from "../types"
+import style from "../styles/About.module.scss"
 
-import style from "../styles/About.module.scss";
+interface AboutProps {
+  data: MainData
+}
 
-const About = ({data}) => {
+const About = ({ data }: AboutProps) => {
   if (!data) {
-    return <section id="about"></section>;
+    return <section id="about"></section>
   }
-  const name = data.name;
-  const profilePic = "/images/" + data.image;
-  const email = data.email;
+  const name = data.name
+  const profilePic = "/images/" + data.image
+  const email = data.email
 
   return (
     <section id="about" className={style.about}>
       <div className="row">
         <div className="three columns">
-          <Image
+          <img
             className={style["profile-pic"]}
             src={profilePic}
             alt="Nobuhiro Ueda Profile Pic"
@@ -44,14 +46,13 @@ const About = ({data}) => {
               <h2>Contact Details</h2>
               <p className="address">
                 <span>{name}</span>
-                <br/>
+                <br />
                 <span>
                   NEC Tamagawa Office, NEC Corporation
-                  <br/>
+                  <br />
                   Nakahara-ku Shimonumabe 1753, Kawasaki, Kanagawa, 211-0011, Japan
                 </span>
-                <br/>
-                {/*<span>{phone}</span><br/>*/}
+                <br />
                 <span>{email}</span>
               </p>
             </div>
@@ -59,7 +60,7 @@ const About = ({data}) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default About;
+export default About
