@@ -1,31 +1,31 @@
-import React from "react";
-import Link from "next/link";
-import * as FontAwesome from "react-icons/fa";
-import {IoIosArrowDropdownCircle} from "react-icons/io";
+import * as FontAwesome from "react-icons/fa"
+import { IoIosArrowDropdownCircle } from "react-icons/io"
+import type { MainData } from "../types"
+import style from "../styles/Header.module.scss"
 
-import style from "../styles/Header.module.scss";
+interface HeaderProps {
+  data: MainData
+  section: string
+  opaque: boolean
+}
 
-const Header = ({data, section, opaque}) => {
-  if (data) {
-    var name = data.name;
-    var description = data.description;
-    var networks = data.social.map(network => {
-      const FaIcon = FontAwesome[network.faClassName];
-      return (
-        <li key={network.name}>
-          <Link href={network.url}>
-
-            <FaIcon/>
-
-          </Link>
-        </li>
-      );
-    });
-  }
+const Header = ({ data, section, opaque }: HeaderProps) => {
+  const name = data.name
+  const description = data.description
+  const networks = data.social.map((network) => {
+    const FaIcon = FontAwesome[network.faClassName as keyof typeof FontAwesome] as React.ComponentType
+    return (
+      <li key={network.name}>
+        <a href={network.url} target="_blank" rel="noreferrer noopener">
+          <FaIcon />
+        </a>
+      </li>
+    )
+  })
 
   return (
     <header id="home" className={style.header}>
-      <nav id="nav-wrap" className={style['nav-wrap'] + (opaque && (' ' + style.opaque))}>
+      <nav id="nav-wrap" className={style['nav-wrap'] + (opaque ? ' ' + style.opaque : '')}>
         <a className={style['mobile-btn']} href="#nav-wrap" title="Show navigation">
           Show navigation
         </a>
@@ -61,20 +61,18 @@ const Header = ({data, section, opaque}) => {
         <div className={style['banner-text']}>
           <h1 className="responsive-headline">I&apos;m {name}.</h1>
           <h3>{description}</h3>
-          <hr/>
+          <hr />
           <ul className={style.social}>{networks}</ul>
         </div>
       </div>
 
       <p className={style['scrolldown']}>
-        <Link href="#about" className="smoothscroll">
-
-          <IoIosArrowDropdownCircle/>
-
-        </Link>
+        <a href="#about" className="smoothscroll">
+          <IoIosArrowDropdownCircle />
+        </a>
       </p>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
