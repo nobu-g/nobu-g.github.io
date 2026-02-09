@@ -58,8 +58,7 @@
           "author": "Shun Inadumi, Nobuhiro Ueda, Koichiro Yoshino",
           "title": "Disambiguating Reference in Visually Grounded Dialogues through Joint Modeling of Textual and Multimodal Semantic Structures",
           "misc": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025), Vienna, Austria, (2025.7).",
-          "resource": {
-          }
+          "resource": {}
         },
         {
           "author": "Nobuhiro Ueda, Hideko Habe, Yoko Matsui, Akishige Yuguchi, Seiya Kawano, Yasutomo Kawanishi, Sadao Kurohashi and Koichiro Yoshino",
@@ -235,7 +234,7 @@
           "title": "Cohesion Analysis of Textual and Visual Entities: Enhancing Accuracy and Comprehensiveness",
           "misc": "Ph.D. Thesis, Kyoto University, (2025.3).",
           "resource": {}
-          }
+        }
       ]
     },
     "experience": {

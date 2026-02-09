@@ -512,7 +512,7 @@ dd {
 
 .lining dt + dt:before,
 .lining dd + dt:before {
-    content: "\A";
+    content: "A";
     white-space: pre;
 }
 
@@ -669,8 +669,8 @@ input[type="submit"].full-width,
 input[type="reset"].full-width,
 input[type="button"].full-width {
     width: 100%;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
     text-align: center;
 }
 
@@ -1083,7 +1083,7 @@ properly.
     }
 
     .column, .columns {
-        width: auto !important;
+        width: auto;
         float: none;
         margin-left: 0;
         margin-right: 0;
@@ -1191,15 +1191,15 @@ properly.
 /*  2. Misc -------------------------------------------------------- */
 
 .remove-bottom {
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
 }
 
 .half-bottom {
-    margin-bottom: 12px !important;
+    margin-bottom: 12px;
 }
 
 .add-bottom {
-    margin-bottom: 24px !important;
+    margin-bottom: 24px;
 }
 
 .no-border {
@@ -1207,29 +1207,29 @@ properly.
 }
 
 .text-center {
-    text-align: center !important;
+    text-align: center;
 }
 
 .text-left {
-    text-align: left !important;
+    text-align: left;
 }
 
 .text-right {
-    text-align: right !important;
+    text-align: right;
 }
 
 .pull-left {
-    float: left !important;
+    float: left;
 }
 
 .pull-right {
-    float: right !important;
+    float: right;
 }
 
 .align-center {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 

@@ -93,7 +93,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 
 ul#nav li.current a {
@@ -631,7 +631,7 @@ call-to-action .button {
 
 #twitter li b a {
     font: 13px/36px var(--font-sans);
-    color: #474747 !important;
+    color: #474747;
     border: none;
 }
 

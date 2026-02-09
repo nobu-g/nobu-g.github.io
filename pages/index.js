@@ -1,14 +1,14 @@
-import React from 'react';
-import Head from 'next/head'
-import Header from '../components/Header';
-import About from '../components/About';
-import Resume from '../components/Resume';
-import Portfolio from '../components/Portfolio';
-import Footer from '../components/Footer';
+import Head from "next/head";
+import React from "react";
+import About from "../components/About";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Portfolio from "../components/Portfolio";
+import Resume from "../components/Resume";
 // import Contact from './components/Contact';
 // import Testimonials from './components/Testimonials';
 
-import resumeData from './resumeData.json';
+import resumeData from "./resumeData.json";
 
 // const fetchConfig = async () => {
 //   const response = await fetch('/resumeData.json');
@@ -18,12 +18,12 @@ import resumeData from './resumeData.json';
 export async function getStaticProps() {
   return {
     props: {
-      resumeData
-    }
-  }
+      resumeData,
+    },
+  };
 }
 
-const Home = ({resumeData}) => {
+const Home = ({ resumeData }) => {
   const config = resumeData;
   const [section, setSection] = React.useState("home");
   const [opaque, setOpaque] = React.useState(false);
@@ -105,34 +105,39 @@ const Home = ({resumeData}) => {
           setSection(nextSection);
         }
       },
-      {rootMargin: '-40% 0px -40% 0px', threshold: 0}
+      { rootMargin: "-40% 0px -40% 0px", threshold: 0 },
     );
 
-    sections.forEach((element) => observer.observe(element));
+    for (const element of sections) {
+      observer.observe(element);
+    }
     return () => observer.disconnect();
   }, []);
 
   return (
     // <div className={styles.container}>
-    (<div className="App">
+    <div className="App">
       <Head>
         <title>Nobuhiro Ueda</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <meta name="description" content="This is the homepage of Nobuhiro Ueda. About his research and education."/>
-        <link rel="icon" href="/favicon.ico"/>
+        <meta
+          name="description"
+          content="This is the homepage of Nobuhiro Ueda. About his research and education."
+        />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header data={config.main} section={section} opaque={opaque}/>
+      <Header data={config.main} section={section} opaque={opaque} />
       <main>
-        <div ref={navTriggerRef} aria-hidden="true" style={{height: 1}}/>
-        <About data={config.main}/>
-        <Resume data={config.resume}/>
-        <Portfolio data={config.portfolio}/>
+        <div ref={navTriggerRef} aria-hidden="true" style={{ height: 1 }} />
+        <About data={config.main} />
+        <Resume data={config.resume} />
+        <Portfolio data={config.portfolio} />
       </main>
-      <Footer data={config.main}/>
-    </div>)
+      <Footer data={config.main} />
+    </div>
   );
 };
 

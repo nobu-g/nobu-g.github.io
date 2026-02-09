@@ -1,11 +1,10 @@
-import React from "react";
 import Image from "next/image";
 
-const Portfolio = ({data}) => {
+const Portfolio = ({ data }) => {
   let projects = null;
   if (data) {
-    projects = data.projects.map(project => {
-      const projectImage = "images/portfolio/" + project.image;
+    projects = data.projects.map((project) => {
+      const projectImage = `images/portfolio/${project.image}`;
       return (
         <div key={project.title} className="columns portfolio-item">
           <div className="item-wrap">

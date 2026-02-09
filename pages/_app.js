@@ -1,57 +1,57 @@
-import '../styles/default.css'
-import '../styles/globals.css'
-import '../styles/layout.css'
-import '../styles/media-queries.css'
-import Script from 'next/script'
-import {useRouter} from 'next/router'
-import {useEffect} from 'react'
-import {Libre_Baskerville, Noto_Sans_JP, Open_Sans} from 'next/font/google'
+import "../styles/default.css";
+import "../styles/globals.css";
+import "../styles/layout.css";
+import "../styles/media-queries.css";
+import { Libre_Baskerville, Noto_Sans_JP, Open_Sans } from "next/font/google";
+import { useRouter } from "next/router";
+import Script from "next/script";
+import { useEffect } from "react";
 
 const openSans = Open_Sans({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-open-sans',
-  display: 'swap',
-})
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-open-sans",
+  display: "swap",
+});
 
 const notoSansJP = Noto_Sans_JP({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-noto-sans-jp',
-  display: 'swap',
-})
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-noto-sans-jp",
+  display: "swap",
+});
 
 const libreBaskerville = Libre_Baskerville({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-  variable: '--font-libre-baskerville',
-  display: 'swap',
-})
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-libre-baskerville",
+  display: "swap",
+});
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter()
-  const fontRootClassName = `${openSans.variable} ${notoSansJP.variable} ${libreBaskerville.variable} font-root`
+  const router = useRouter();
+  const fontRootClassName = `${openSans.variable} ${notoSansJP.variable} ${libreBaskerville.variable} font-root`;
 
   useEffect(() => {
     if (!GA_ID) {
-      return
+      return;
     }
 
     const handleRouteChange = (url) => {
-      if (typeof window.gtag !== 'function') {
-        return
+      if (typeof window.gtag !== "function") {
+        return;
       }
-      window.gtag('config', GA_ID, {page_path: url})
-    }
+      window.gtag("config", GA_ID, { page_path: url });
+    };
 
-    router.events.on('routeChangeComplete', handleRouteChange)
+    router.events.on("routeChangeComplete", handleRouteChange);
     return () => {
-      router.events.off('routeChangeComplete', handleRouteChange)
-    }
-  }, [router.events])
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
 
   return (
     <>
@@ -75,7 +75,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </div>
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

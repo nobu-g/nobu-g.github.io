@@ -7,34 +7,33 @@
 /*}*/
 
 .font-root {
-    --font-sans: var(--font-open-sans), var(--font-noto-sans-jp), sans-serif;
-    --font-serif: var(--font-libre-baskerville), serif;
-    font-family: var(--font-sans);
+  --font-sans: var(--font-open-sans), var(--font-noto-sans-jp), sans-serif;
+  --font-serif: var(--font-libre-baskerville), serif;
+  font-family: var(--font-sans);
 }
 
-
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 a:hover,
 a:focus {
-    color: #313131;
+  color: #313131;
 }
 
 h1 {
-    font: 18px/24px var(--font-sans);
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  font: 18px / 24px var(--font-sans);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 h1 span {
-    border-bottom: 3px solid #11abb0;
-    padding-bottom: 6px;
+  border-bottom: 3px solid #11abb0;
+  padding-bottom: 6px;
 }
 
 h3 {
-    font: 25px/30px var(--font-sans);
-    font-weight: bold;
+  font: 25px / 30px var(--font-sans);
+  font-weight: bold;
 }

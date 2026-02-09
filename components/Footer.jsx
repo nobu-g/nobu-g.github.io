@@ -1,19 +1,17 @@
-import React from "react";
 import Link from "next/link";
 import * as FontAwesome from "react-icons/fa";
-import {FaChevronUp} from "react-icons/fa";
+import { FaChevronUp } from "react-icons/fa";
 
-const Footer = ({data}) => {
+const Footer = ({ data }) => {
   let networks = null;
   if (data) {
-    networks = data.social.map(network => {
+    networks = data.social.map((network) => {
+      // biome-ignore lint/performance/noDynamicNamespaceImportAccess: icon name is data-driven
       const FaIcon = FontAwesome[network.faClassName];
       return (
         <li key={network.name}>
           <Link href={network.url}>
-
-            <FaIcon/>
-
+            <FaIcon />
           </Link>
         </li>
       );
@@ -38,9 +36,7 @@ const Footer = ({data}) => {
         </div>
         <div id="go-top">
           <Link href="#home" className="smoothscroll" title="Back to Top">
-
-            <FaChevronUp/>
-
+            <FaChevronUp />
           </Link>
         </div>
       </div>

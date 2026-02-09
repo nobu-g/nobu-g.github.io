@@ -1,17 +1,18 @@
-import React, {Component} from "react";
 import Image from "next/image";
+import { Component } from "react";
 
 class Contact extends Component {
   render() {
+    let name, street, city, state, zip, phone, _email, message;
     if (this.props.data) {
-      var name = this.props.data.name;
-      var street = this.props.data.address.street;
-      var city = this.props.data.address.city;
-      var state = this.props.data.address.state;
-      var zip = this.props.data.address.zip;
-      var phone = this.props.data.phone;
-      var email = this.props.data.email;
-      var message = this.props.data.contactmessage;
+      name = this.props.data.name;
+      street = this.props.data.address.street;
+      city = this.props.data.address.city;
+      state = this.props.data.address.state;
+      zip = this.props.data.address.zip;
+      phone = this.props.data.phone;
+      _email = this.props.data.email;
+      message = this.props.data.contactmessage;
     }
 
     return (
@@ -85,9 +86,11 @@ class Contact extends Component {
                 </div>
 
                 <div>
-                  <button className="submit">Submit</button>
+                  <button type="submit" className="submit">
+                    Submit
+                  </button>
                   <span id="image-loader">
-                    <Image alt="" src="images/loader.gif"/>
+                    <Image alt="" src="images/loader.gif" />
                   </span>
                 </div>
               </fieldset>
@@ -96,7 +99,7 @@ class Contact extends Component {
             <div id="message-warning"> Error boy</div>
             <div id="message-success">
               <i className="fa fa-check"></i>Your message was sent, thank you!
-              <br/>
+              <br />
             </div>
           </div>
 
@@ -105,10 +108,10 @@ class Contact extends Component {
               <h4>Address and Phone</h4>
               <p className="address">
                 {name}
-                <br/>
-                {street} <br/>
+                <br />
+                {street} <br />
                 {city}, {state} {zip}
-                <br/>
+                <br />
                 <span>{phone}</span>
               </p>
             </div>
@@ -118,12 +121,14 @@ class Contact extends Component {
               <ul id="twitter">
                 <li>
                   <span>
-                    This is Photoshop&apos;s version of Lorem Ipsum. Proin gravida
-                    nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-                    quis bibendum auctor, nisi elit consequat ipsum
+                    This is Photoshop&apos;s version of Lorem Ipsum. Proin
+                    gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                    lorem quis bibendum auctor, nisi elit consequat ipsum
+                    {/* biome-ignore lint/a11y/useValidAnchor: placeholder link */}
                     <a href="#">http://t.co/CGIrdxIlI3</a>
                   </span>
                   <b>
+                    {/* biome-ignore lint/a11y/useValidAnchor: placeholder link */}
                     <a href="#">2 Days Ago</a>
                   </b>
                 </li>
@@ -133,9 +138,11 @@ class Contact extends Component {
                     voluptatem accusantium doloremque laudantium, totam rem
                     aperiam, eaque ipsa quae ab illo inventore veritatis et
                     quasi
+                    {/* biome-ignore lint/a11y/useValidAnchor: placeholder link */}
                     <a href="#">http://t.co/CGIrdxIlI3</a>
                   </span>
                   <b>
+                    {/* biome-ignore lint/a11y/useValidAnchor: placeholder link */}
                     <a href="#">3 Days Ago</a>
                   </b>
                 </li>
