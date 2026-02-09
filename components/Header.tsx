@@ -1,17 +1,27 @@
 import Link from "next/link";
 import * as FontAwesome from "react-icons/fa";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
-
 import style from "../styles/Header.module.scss";
+import type { MainData } from "../types/resumeData";
 
-const Header = ({ data, section, opaque }) => {
-  let name, description, networks;
+interface HeaderProps {
+  data: MainData;
+  section: string;
+  opaque: boolean;
+}
+
+const Header = ({ data, section, opaque }: HeaderProps) => {
+  let name: string | undefined,
+    description: string | undefined,
+    networks: React.JSX.Element[] | undefined;
   if (data) {
     name = data.name;
     description = data.description;
     networks = data.social.map((network) => {
       // biome-ignore lint/performance/noDynamicNamespaceImportAccess: icon name is data-driven
-      const FaIcon = FontAwesome[network.faClassName];
+      const FaIcon = FontAwesome[
+        network.faClassName as keyof typeof FontAwesome
+      ] as React.ComponentType;
       return (
         <li key={network.name}>
           <Link href={network.url}>

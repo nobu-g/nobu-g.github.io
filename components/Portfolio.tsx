@@ -1,6 +1,12 @@
 import Image from "next/image";
 
-const Portfolio = ({ data }) => {
+import type { PortfolioData } from "../types/resumeData";
+
+interface PortfolioProps {
+  data: PortfolioData;
+}
+
+const Portfolio = ({ data }: PortfolioProps) => {
   let projects = null;
   if (data) {
     projects = data.projects.map((project) => {

@@ -2,12 +2,20 @@ import Link from "next/link";
 import * as FontAwesome from "react-icons/fa";
 import { FaChevronUp } from "react-icons/fa";
 
-const Footer = ({ data }) => {
+import type { MainData } from "../types/resumeData";
+
+interface FooterProps {
+  data: MainData;
+}
+
+const Footer = ({ data }: FooterProps) => {
   let networks = null;
   if (data) {
     networks = data.social.map((network) => {
       // biome-ignore lint/performance/noDynamicNamespaceImportAccess: icon name is data-driven
-      const FaIcon = FontAwesome[network.faClassName];
+      const FaIcon = FontAwesome[
+        network.faClassName as keyof typeof FontAwesome
+      ] as React.ComponentType;
       return (
         <li key={network.name}>
           <Link href={network.url}>

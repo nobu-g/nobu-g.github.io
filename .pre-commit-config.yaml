@@ -15,11 +15,11 @@ repos:
     hooks:
       - id: biome-check
       - id: biome-format
-  # - repo: local
-  #   hooks:
-  #     - id: tsc
-  #       name: TypeScript type check
-  #       entry: npm run build
-  #       language: system
-  #       pass_filenames: false
-  #       files: \.[jt]sx?$
+  - repo: local
+    hooks:
+      - id: tsc
+        name: TypeScript type check
+        entry: npm run build
+        language: system
+        pass_filenames: false
+        files: \.[jt]sx?$

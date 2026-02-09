@@ -1,7 +1,12 @@
 import style from "../styles/About.module.scss";
+import type { MainData } from "../types/resumeData";
 import Image from "./Image";
 
-const About = ({ data }) => {
+interface AboutProps {
+  data: MainData;
+}
+
+const About = ({ data }: AboutProps) => {
   if (!data) {
     return <section id="about"></section>;
   }

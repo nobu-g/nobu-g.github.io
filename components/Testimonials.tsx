@@ -1,8 +1,19 @@
 import { Component } from "react";
 
-class Testimonials extends Component {
+interface Testimonial {
+  user: string;
+  text: string;
+}
+
+interface TestimonialsProps {
+  data?: {
+    testimonials: Testimonial[];
+  };
+}
+
+class Testimonials extends Component<TestimonialsProps> {
   render() {
-    let testimonials;
+    let testimonials: React.JSX.Element[] | undefined;
     if (this.props.data) {
       testimonials = this.props.data.testimonials.map((testimonials) => (
         <li key={testimonials.user}>

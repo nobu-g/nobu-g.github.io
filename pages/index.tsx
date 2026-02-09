@@ -1,3 +1,4 @@
+import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import Head from "next/head";
 import React from "react";
 import About from "../components/About";
@@ -8,6 +9,7 @@ import Resume from "../components/Resume";
 // import Contact from './components/Contact';
 // import Testimonials from './components/Testimonials';
 
+import type { ResumeData } from "../types/resumeData";
 import resumeData from "./resumeData.json";
 
 // const fetchConfig = async () => {
@@ -15,20 +17,24 @@ import resumeData from "./resumeData.json";
 //   return await response.json();
 // }
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps<{
+  resumeData: ResumeData;
+}> = async () => {
   return {
     props: {
-      resumeData,
+      resumeData: resumeData as unknown as ResumeData,
     },
   };
-}
+};
 
-const Home = ({ resumeData }) => {
+const Home = ({
+  resumeData,
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
   const config = resumeData;
   const [section, setSection] = React.useState("home");
   const [opaque, setOpaque] = React.useState(false);
   const sectionRef = React.useRef("home");
-  const navTriggerRef = React.useRef(null);
+  const navTriggerRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
     sectionRef.current = section;
@@ -64,22 +70,22 @@ const Home = ({ resumeData }) => {
     const sectionIds = ["home", "about", "resume", "portfolio"];
     const sections = sectionIds
       .map((id) => document.getElementById(id))
-      .filter(Boolean);
+      .filter(Boolean) as HTMLElement[];
 
     if (!sections.length) {
       return;
     }
 
-    const activeEntries = new Map();
+    const activeEntries = new Map<string, IntersectionObserverEntry>();
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
+        for (const entry of entries) {
           if (entry.isIntersecting) {
             activeEntries.set(entry.target.id, entry);
           } else {
             activeEntries.delete(entry.target.id);
           }
-        });
+        }
 
         if (!activeEntries.size) {
           return;

@@ -1,9 +1,22 @@
 import Image from "next/image";
 import { Component } from "react";
 
-class Contact extends Component {
+import type { MainData } from "../types/resumeData";
+
+interface ContactProps {
+  data?: MainData;
+}
+
+class Contact extends Component<ContactProps> {
   render() {
-    let name, street, city, state, zip, phone, _email, message;
+    let name: string | undefined,
+      street: string | undefined,
+      city: string | undefined,
+      state: string | undefined,
+      zip: string | undefined,
+      phone: string | undefined,
+      _email: string | undefined,
+      message: string | undefined;
     if (this.props.data) {
       name = this.props.data.name;
       street = this.props.data.address.street;
@@ -40,10 +53,9 @@ class Contact extends Component {
                   <input
                     type="text"
                     defaultValue=""
-                    size="35"
+                    size={35}
                     id="contactName"
                     name="contactName"
-                    onChange={this.handleChange}
                   />
                 </div>
 
@@ -54,10 +66,9 @@ class Contact extends Component {
                   <input
                     type="text"
                     defaultValue=""
-                    size="35"
+                    size={35}
                     id="contactEmail"
                     name="contactEmail"
-                    onChange={this.handleChange}
                   />
                 </div>
 
@@ -66,10 +77,9 @@ class Contact extends Component {
                   <input
                     type="text"
                     defaultValue=""
-                    size="35"
+                    size={35}
                     id="contactSubject"
                     name="contactSubject"
-                    onChange={this.handleChange}
                   />
                 </div>
 
@@ -78,8 +88,8 @@ class Contact extends Component {
                     Message <span className="required">*</span>
                   </label>
                   <textarea
-                    cols="50"
-                    rows="15"
+                    cols={50}
+                    rows={15}
                     id="contactMessage"
                     name="contactMessage"
                   ></textarea>

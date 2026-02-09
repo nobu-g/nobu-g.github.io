@@ -1,9 +1,9 @@
 import Image from "next/image";
-
 import style from "../styles/Resume.module.scss";
+import type { ResumeSection } from "../types/resumeData";
 
-const Author = ({ author }) => {
-  const highlightKeyword = (text, keywords) => {
+const Author = ({ author }: { author: string }) => {
+  const highlightKeyword = (text: string, keywords: string[]) => {
     const parts = text.split(new RegExp(`(${keywords.join("|")})`, "gi"));
     return parts.map((part, i) =>
       keywords.includes(part) ? (
@@ -19,7 +19,11 @@ const Author = ({ author }) => {
   );
 };
 
-const Resume = ({ data }) => {
+interface ResumeProps {
+  data: ResumeSection;
+}
+
+const Resume = ({ data }: ResumeProps) => {
   let education = null;
   let publications = null;
   let experiences = null;

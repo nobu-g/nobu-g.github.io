@@ -2,6 +2,7 @@ import "../styles/default.css";
 import "../styles/globals.css";
 import "../styles/layout.css";
 import "../styles/media-queries.css";
+import type { AppProps } from "next/app";
 import { Libre_Baskerville, Noto_Sans_JP, Open_Sans } from "next/font/google";
 import { useRouter } from "next/router";
 import Script from "next/script";
@@ -31,7 +32,7 @@ const libreBaskerville = Libre_Baskerville({
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const fontRootClassName = `${openSans.variable} ${notoSansJP.variable} ${libreBaskerville.variable} font-root`;
 
@@ -40,7 +41,7 @@ function MyApp({ Component, pageProps }) {
       return;
     }
 
-    const handleRouteChange = (url) => {
+    const handleRouteChange = (url: string) => {
       if (typeof window.gtag !== "function") {
         return;
       }
