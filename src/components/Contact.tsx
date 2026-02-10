@@ -130,9 +130,9 @@ class Contact extends Component<ContactProps> {
               <ul id="twitter">
                 <li>
                   <span>
-                    This is Photoshop&apos;s version of Lorem Ipsum. Proin
-                    gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                    lorem quis bibendum auctor, nisi elit consequat ipsum
+                    This is Photoshop&apos;s version of Lorem Ipsum. Proin gravida nibh vel velit
+                    auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+                    consequat ipsum
                     {/* biome-ignore lint/a11y/useValidAnchor: placeholder link */}
                     <a href="#">http://t.co/CGIrdxIlI3</a>
                   </span>
@@ -143,10 +143,9 @@ class Contact extends Component<ContactProps> {
                 </li>
                 <li>
                   <span>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                    veritatis et quasi
                     {/* biome-ignore lint/a11y/useValidAnchor: placeholder link */}
                     <a href="#">http://t.co/CGIrdxIlI3</a>
                   </span>

@@ -77,8 +77,7 @@ const Home = () => {
         let closestDistance = Number.POSITIVE_INFINITY;
 
         activeEntries.forEach((entry, id) => {
-          const entryCenter =
-            entry.boundingClientRect.top + entry.boundingClientRect.height / 2;
+          const entryCenter = entry.boundingClientRect.top + entry.boundingClientRect.height / 2;
           const distance = Math.abs(entryCenter - viewportCenter);
 
           if (distance < closestDistance) {

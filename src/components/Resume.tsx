@@ -13,9 +13,7 @@ const Author = ({ author }: { author: string }) => {
       ),
     );
   };
-  return (
-    <span>{highlightKeyword(author, ["Nobuhiro Ueda", "植田 暢大"])}</span>
-  );
+  return <span>{highlightKeyword(author, ["Nobuhiro Ueda", "植田 暢大"])}</span>;
 };
 
 interface ResumeProps {
@@ -55,9 +53,7 @@ const Resume = ({ data }: ResumeProps) => {
                 {item.misc}
                 <br />
                 {Object.entries(item.resource).map(([kind, url]) => (
-                  <span key={kind}>
-                    [{url ? <a href={url}>{kind}</a> : kind}]
-                  </span>
+                  <span key={kind}>[{url ? <a href={url}>{kind}</a> : kind}]</span>
                 ))}
                 {item.award && (
                   <>
@@ -103,9 +99,7 @@ const Resume = ({ data }: ResumeProps) => {
                   ""
                 )}
                 {Object.entries(item.resource).map(([kind, url]) => (
-                  <span key={kind}>
-                    [{url ? <a href={url}>{kind}</a> : kind}]
-                  </span>
+                  <span key={kind}>[{url ? <a href={url}>{kind}</a> : kind}]</span>
                 ))}
                 {item.award && (
                   <>

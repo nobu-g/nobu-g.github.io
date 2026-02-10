@@ -33,15 +33,8 @@ const Header = ({ data, section, opaque }: HeaderProps) => {
 
   return (
     <header id="home" className={style.header}>
-      <nav
-        id="nav-wrap"
-        className={style["nav-wrap"] + (opaque && ` ${style.opaque}`)}
-      >
-        <a
-          className={style["mobile-btn"]}
-          href="#nav-wrap"
-          title="Show navigation"
-        >
+      <nav id="nav-wrap" className={style["nav-wrap"] + (opaque && ` ${style.opaque}`)}>
+        <a className={style["mobile-btn"]} href="#nav-wrap" title="Show navigation">
           Show navigation
         </a>
         <a className={style["mobile-btn"]} href="#home" title="Hide navigation">
