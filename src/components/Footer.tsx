@@ -1,4 +1,3 @@
-import Link from "next/link";
 import * as FontAwesome from "react-icons/fa";
 import { FaChevronUp } from "react-icons/fa";
 
@@ -18,9 +17,9 @@ const Footer = ({ data }: FooterProps) => {
       ] as React.ComponentType;
       return (
         <li key={network.name}>
-          <Link href={network.url}>
+          <a href={network.url}>
             <FaIcon />
-          </Link>
+          </a>
         </li>
       );
     });
@@ -43,9 +42,9 @@ const Footer = ({ data }: FooterProps) => {
           </ul>
         </div>
         <div id="go-top">
-          <Link href="#home" className="smoothscroll" title="Back to Top">
+          <a href="#home" className="smoothscroll" title="Back to Top">
             <FaChevronUp />
-          </Link>
+          </a>
         </div>
       </div>
     </footer>

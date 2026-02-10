@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import type { PortfolioData } from "../types/resumeData";
 
 interface PortfolioProps {
@@ -10,17 +8,16 @@ const Portfolio = ({ data }: PortfolioProps) => {
   let projects = null;
   if (data) {
     projects = data.projects.map((project) => {
-      const projectImage = `images/portfolio/${project.image}`;
+      const projectImage = `/images/portfolio/${project.image}`;
       return (
         <div key={project.title} className="columns portfolio-item">
           <div className="item-wrap">
             <a href={project.url} title={project.title}>
-              <Image
+              <img
                 alt={project.title}
                 src={projectImage}
                 width={project.width}
                 height={project.height}
-                sizes="(max-width: 767px) 100vw, (max-width: 900px) 50vw, 25vw"
               />
               <div className="overlay">
                 <div className="portfolio-item-meta">

@@ -27,12 +27,12 @@
   "files": {
     "includes": [
       "**",
-      "!out",
+      "!dist",
       "!cv",
       "!public",
-      "!styles/default.css",
-      "!styles/layout.css",
-      "!styles/media-queries.css"
+      "!src/styles/default.css",
+      "!src/styles/layout.css",
+      "!src/styles/media-queries.css"
     ]
   }
 }

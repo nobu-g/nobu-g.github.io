@@ -1,36 +1,17 @@
-import type { GetStaticProps, InferGetStaticPropsType } from "next";
-import Head from "next/head";
 import React from "react";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Portfolio from "../components/Portfolio";
 import Resume from "../components/Resume";
-// import Contact from './components/Contact';
-// import Testimonials from './components/Testimonials';
+// import Contact from '../components/Contact';
+// import Testimonials from '../components/Testimonials';
 
+import resumeData from "../data/resumeData.json";
 import type { ResumeData } from "../types/resumeData";
-import resumeData from "./resumeData.json";
 
-// const fetchConfig = async () => {
-//   const response = await fetch('/resumeData.json');
-//   return await response.json();
-// }
-
-export const getStaticProps: GetStaticProps<{
-  resumeData: ResumeData;
-}> = async () => {
-  return {
-    props: {
-      resumeData: resumeData as unknown as ResumeData,
-    },
-  };
-};
-
-const Home = ({
-  resumeData,
-}: InferGetStaticPropsType<typeof getStaticProps>) => {
-  const config = resumeData;
+const Home = () => {
+  const config = resumeData as unknown as ResumeData;
   const [section, setSection] = React.useState("home");
   const [opaque, setOpaque] = React.useState(false);
   const sectionRef = React.useRef("home");
@@ -121,20 +102,7 @@ const Home = ({
   }, []);
 
   return (
-    // <div className={styles.container}>
     <div className="App">
-      <Head>
-        <title>Nobuhiro Ueda</title>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <meta
-          name="description"
-          content="This is the homepage of Nobuhiro Ueda. About his research and education."
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Header data={config.main} section={section} opaque={opaque} />
       <main>
         <div ref={navTriggerRef} aria-hidden="true" style={{ height: 1 }} />

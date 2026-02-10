@@ -1,4 +1,3 @@
-import Image from "next/image";
 import style from "../styles/Resume.module.scss";
 import type { ResumeSection } from "../types/resumeData";
 
@@ -62,7 +61,7 @@ const Resume = ({ data }: ResumeProps) => {
                 ))}
                 {item.award && (
                   <>
-                    <Image
+                    <img
                       src={item.award.image}
                       height="16"
                       width="16"
@@ -110,7 +109,7 @@ const Resume = ({ data }: ResumeProps) => {
                 ))}
                 {item.award && (
                   <>
-                    <Image
+                    <img
                       src={item.award.image}
                       height="16"
                       width="16"
@@ -146,15 +145,6 @@ const Resume = ({ data }: ResumeProps) => {
       );
     });
   }
-
-  // const skills = data.skills.map(skills => {
-  //   const className = 'bar-expand ' + skills.name.toLowerCase();
-  //   return (
-  //     <li key={skills.name}>
-  //       <span style={{width: skills.level}} className={className}></span><em>{skills.name}</em>
-  //     </li>
-  //   );
-  // })
 
   return (
     <section id="resume" className={style.resume}>
@@ -203,19 +193,6 @@ const Resume = ({ data }: ResumeProps) => {
         </div>
         <div className={`nine columns ${style["main-col"]}`}>{honors}</div>
       </div>
-
-      {/*<div className="row skill">*/}
-      {/*  <div className="three columns header-col">*/}
-      {/*    <h1><span>Skills</span></h1>*/}
-      {/*  </div>*/}
-      {/*  <div className="nine columns main-col">*/}
-      {/*    <div className="bars">*/}
-      {/*      <ul className="skills">*/}
-      {/*        {skills}*/}
-      {/*      </ul>*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*</div>*/}
     </section>
   );
 };

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Component } from "react";
 
 import type { MainData } from "../types/resumeData";
@@ -100,7 +99,7 @@ class Contact extends Component<ContactProps> {
                     Submit
                   </button>
                   <span id="image-loader">
-                    <Image alt="" src="images/loader.gif" />
+                    <img alt="" src="images/loader.gif" />
                   </span>
                 </div>
               </fieldset>

@@ -1,6 +1,5 @@
 import style from "../styles/About.module.scss";
 import type { MainData } from "../types/resumeData";
-import Image from "./Image";
 
 interface AboutProps {
   data: MainData;
@@ -18,7 +17,7 @@ const About = ({ data }: AboutProps) => {
     <section id="about" className={style.about}>
       <div className="row">
         <div className="three columns">
-          <Image
+          <img
             className={style["profile-pic"]}
             src={profilePic}
             alt="Nobuhiro Ueda Profile Pic"

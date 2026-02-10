@@ -7,6 +7,9 @@
 /*}*/
 
 .font-root {
+  --font-open-sans: "Open Sans";
+  --font-noto-sans-jp: "Noto Sans JP";
+  --font-libre-baskerville: "Libre Baskerville";
   --font-sans: var(--font-open-sans), var(--font-noto-sans-jp), sans-serif;
   --font-serif: var(--font-libre-baskerville), serif;
   font-family: var(--font-sans);

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import * as FontAwesome from "react-icons/fa";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import style from "../styles/Header.module.scss";
@@ -24,9 +23,9 @@ const Header = ({ data, section, opaque }: HeaderProps) => {
       ] as React.ComponentType;
       return (
         <li key={network.name}>
-          <Link href={network.url}>
+          <a href={network.url}>
             <FaIcon />
-          </Link>
+          </a>
         </li>
       );
     });
@@ -83,9 +82,9 @@ const Header = ({ data, section, opaque }: HeaderProps) => {
       </div>
 
       <p className={style.scrolldown}>
-        <Link href="#about" className="smoothscroll">
+        <a href="#about" className="smoothscroll">
           <IoIosArrowDropdownCircle />
-        </Link>
+        </a>
       </p>
     </header>
   );
