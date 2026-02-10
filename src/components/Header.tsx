@@ -1,7 +1,7 @@
-import * as FontAwesome from "react-icons/fa";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import style from "../styles/Header.module.css";
 import type { MainData } from "../types/resumeData";
+import { getSocialIcon } from "./socialIcons";
 
 interface HeaderProps {
   data: MainData;
@@ -16,19 +16,20 @@ const Header = ({ data, section, opaque }: HeaderProps) => {
   if (data) {
     name = data.name;
     description = data.description;
-    networks = data.social.map((network) => {
-      // biome-ignore lint/performance/noDynamicNamespaceImportAccess: icon name is data-driven
-      const FaIcon = FontAwesome[
-        network.faClassName as keyof typeof FontAwesome
-      ] as React.ComponentType;
-      return (
+    networks = data.social.reduce<React.JSX.Element[]>((elements, network) => {
+      const FaIcon = getSocialIcon(network.faClassName);
+      if (!FaIcon) {
+        return elements;
+      }
+      elements.push(
         <li key={network.name}>
           <a href={network.url}>
             <FaIcon />
           </a>
-        </li>
+        </li>,
       );
-    });
+      return elements;
+    }, []);
   }
 
   return (

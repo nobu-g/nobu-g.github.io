@@ -1,7 +1,6 @@
-import * as FontAwesome from "react-icons/fa";
 import { FaChevronUp } from "react-icons/fa";
-
 import type { MainData } from "../types/resumeData";
+import { getSocialIcon } from "./socialIcons";
 
 interface FooterProps {
   data: MainData;
@@ -10,19 +9,20 @@ interface FooterProps {
 const Footer = ({ data }: FooterProps) => {
   let networks = null;
   if (data) {
-    networks = data.social.map((network) => {
-      // biome-ignore lint/performance/noDynamicNamespaceImportAccess: icon name is data-driven
-      const FaIcon = FontAwesome[
-        network.faClassName as keyof typeof FontAwesome
-      ] as React.ComponentType;
-      return (
+    networks = data.social.reduce<React.JSX.Element[]>((elements, network) => {
+      const FaIcon = getSocialIcon(network.faClassName);
+      if (!FaIcon) {
+        return elements;
+      }
+      elements.push(
         <li key={network.name}>
           <a href={network.url}>
             <FaIcon />
           </a>
-        </li>
+        </li>,
       );
-    });
+      return elements;
+    }, []);
   }
 
   return (
