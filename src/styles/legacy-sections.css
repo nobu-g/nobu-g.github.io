@@ -1,0 +1,372 @@
+/* ==================================================================
+   Legacy styles for currently unused sections.
+   Keep for future reactivation (Contact / Testimonials / CTA).
+   ================================================================== */
+
+/* Call To Action */
+#call-to-action {
+  background: #212121;
+  padding-top: 66px;
+  padding-bottom: 48px;
+}
+
+#call-to-action h1 {
+  font: 18px / 24px var(--font-sans);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+#call-to-action h1 span {
+  display: none;
+}
+
+#call-to-action .header-col h1:before {
+  font-family: "FontAwesome", sans-serif;
+  content: "\f0ac";
+  padding-right: 10px;
+  font-size: 72px;
+  line-height: 72px;
+  text-align: left;
+  float: left;
+  color: #fff;
+}
+
+#call-to-action .action {
+  margin-top: 12px;
+}
+
+#call-to-action h2 {
+  font: 28px / 36px var(--font-sans);
+  font-weight: bold;
+  color: #ebeeee;
+  margin-bottom: 6px;
+}
+
+#call-to-action h2 a {
+  color: inherit;
+}
+
+#call-to-action p {
+  color: #636363;
+  font-size: 17px;
+}
+
+#call-to-action .button:hover,
+#call-to-action .button:active {
+  background: #fff;
+  color: #0d0d0d;
+}
+
+#call-to-action p span {
+  font-family: var(--font-sans);
+  color: #d8d8d8;
+}
+
+/* Contact */
+#contact {
+  background: #191919;
+  padding-top: 96px;
+  padding-bottom: 102px;
+  color: #636363;
+}
+
+#contact .section-head {
+  margin-bottom: 42px;
+}
+
+#contact a,
+#contact a:visited {
+  color: #11abb0;
+}
+
+#contact a:hover,
+#contact a:focus {
+  color: #fff;
+}
+
+#contact h1 {
+  font: 18px / 24px var(--font-sans);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ebeeee;
+  margin-bottom: 6px;
+}
+
+#contact h1 span {
+  display: none;
+}
+
+#contact h1:before {
+  font-family: "FontAwesome", sans-serif;
+  content: "\f0e0";
+  padding-right: 10px;
+  font-size: 72px;
+  line-height: 72px;
+  text-align: left;
+  float: left;
+  color: #ebeeee;
+}
+
+#contact h4 {
+  font: 16px / 24px var(--font-sans);
+  font-weight: bold;
+  color: #ebeeee;
+  margin-bottom: 6px;
+}
+
+#contact p.lead {
+  font: 18px / 36px var(--font-sans);
+  padding-right: 3%;
+}
+
+#contact .header-col {
+  padding-top: 6px;
+}
+
+#contact form {
+  margin-bottom: 30px;
+}
+
+#contact label {
+  font: 15px / 24px var(--font-sans);
+  font-weight: bold;
+  margin: 12px 0;
+  color: #ebeeee;
+  display: inline-block;
+  float: left;
+  width: 26%;
+}
+
+#contact input,
+#contact textarea,
+#contact select {
+  padding: 18px 20px;
+  color: #eee;
+  background: #373233;
+  margin-bottom: 42px;
+  border: 0;
+  outline: none;
+  font-size: 15px;
+  line-height: 24px;
+  width: 65%;
+}
+
+#contact input:focus,
+#contact textarea:focus,
+#contact select:focus {
+  color: #fff;
+  background-color: #11abb0;
+}
+
+#contact button.submit {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  background: #0d0d0d;
+  border: none;
+  cursor: pointer;
+  height: auto;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 26%;
+}
+
+#contact button.submit:hover {
+  color: #0d0d0d;
+  background: #fff;
+}
+
+#contact span.required {
+  color: #11abb0;
+  font-size: 13px;
+}
+
+#message-warning,
+#message-success {
+  display: none;
+  background: #0f0f0f;
+  padding: 24px;
+  margin-bottom: 36px;
+  width: 65%;
+  margin-left: 26%;
+}
+
+#message-warning {
+  color: #d72828;
+}
+
+#message-success {
+  color: #11abb0;
+}
+
+#message-warning i,
+#message-success i {
+  margin-right: 10px;
+}
+
+#image-loader {
+  display: none;
+  position: relative;
+  left: 18px;
+  top: 17px;
+}
+
+#twitter {
+  margin-top: 12px;
+  padding: 0;
+}
+
+#twitter li {
+  margin: 6px 0 12px;
+  line-height: 30px;
+}
+
+#twitter li span {
+  display: block;
+}
+
+#twitter li b a {
+  font: 13px / 36px var(--font-sans);
+  color: #474747;
+  border: none;
+}
+
+/* Responsive legacy rules */
+@media only screen and (max-width: 900px) {
+  #testimonials .header-col h1:before {
+    font-size: 66px;
+    line-height: 66px;
+  }
+
+  #testimonials blockquote p {
+    font-size: 22px;
+    line-height: 46px;
+  }
+
+  #call-to-action .header-col h1:before {
+    font-size: 66px;
+    line-height: 66px;
+  }
+
+  #contact .section-head {
+    margin-bottom: 30px;
+  }
+
+  #contact .header-col h1:before {
+    font-size: 66px;
+    line-height: 66px;
+  }
+
+  #contact .section-head p.lead {
+    font: 17px / 33px var(--font-sans);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #call-to-action {
+    text-align: center;
+  }
+
+  #call-to-action h1 {
+    font: 16px / 24px var(--font-sans);
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+  }
+
+  #call-to-action h1 span {
+    display: block;
+  }
+
+  #call-to-action .header-col h1:before {
+    content: none;
+  }
+
+  #call-to-action p {
+    font-size: 15px;
+  }
+
+  #testimonials .text-container {
+    text-align: center;
+  }
+
+  #testimonials h1 {
+    font: 16px / 24px var(--font-sans);
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+  }
+
+  #testimonials h1 span {
+    display: block;
+  }
+
+  #testimonials .header-col h1:before {
+    content: none;
+  }
+
+  #testimonials blockquote {
+    padding-bottom: 24px;
+  }
+
+  #testimonials blockquote p {
+    font-size: 20px;
+    line-height: 42px;
+  }
+
+  #contact {
+    padding-bottom: 66px;
+  }
+
+  #contact .section-head {
+    margin-bottom: 12px;
+  }
+
+  #contact .section-head h1 {
+    font: 16px / 24px var(--font-sans);
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+  }
+
+  #contact h1 span {
+    display: block;
+  }
+
+  #contact .header-col {
+    padding-top: 0;
+  }
+
+  #contact .header-col h1:before {
+    content: none;
+  }
+
+  #contact .section-head p.lead {
+    text-align: center;
+  }
+
+  #contact label {
+    float: none;
+    width: 100%;
+  }
+
+  #contact input,
+  #contact textarea,
+  #contact select {
+    margin-bottom: 6px;
+    width: 100%;
+  }
+
+  #contact button.submit {
+    margin: 30px 0 24px;
+  }
+
+  #message-warning,
+  #message-success {
+    width: 100%;
+    margin-left: 0;
+  }
+}

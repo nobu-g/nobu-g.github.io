@@ -1,7 +1,4 @@
-import "./styles/default.css";
-import "./styles/globals.css";
-import "./styles/layout.css";
-import "./styles/media-queries.css";
+import "./styles/index.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";

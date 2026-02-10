@@ -1,0 +1,6 @@
+@import "./base.css";
+@import "./layout-global.css";
+@import "./responsive-global.css";
+
+/* Legacy styles for currently unused sections (contact/testimonials/call-to-action). */
+@import "./legacy-sections.css";
