@@ -1,6 +1,6 @@
 import * as FontAwesome from "react-icons/fa";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
-import style from "../styles/Header.module.scss";
+import style from "../styles/Header.module.css";
 import type { MainData } from "../types/resumeData";
 
 interface HeaderProps {

@@ -1,4 +1,4 @@
-import style from "../styles/Resume.module.scss";
+import style from "../styles/Resume.module.css";
 import type { ResumeSection } from "../types/resumeData";
 
 const Author = ({ author }: { author: string }) => {

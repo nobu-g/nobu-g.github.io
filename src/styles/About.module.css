@@ -1,0 +1,64 @@
+/* ------------------------------------------------------------------ */
+/* c. About Section
+/* ------------------------------------------------------------------ */
+
+.about {
+  background: #2b2b2b;
+  padding-top: 96px;
+  padding-bottom: 66px;
+  overflow: hidden;
+}
+
+.about a,
+.about a:visited {
+  color: #fff;
+}
+
+.about a:hover,
+.about a:focus {
+  color: #11abb0;
+}
+
+.about h2 {
+  font: 22px / 30px var(--font-sans);
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.about p {
+  line-height: 30px;
+  color: #7a7a7a;
+}
+
+.profile-pic {
+  border-radius: 100%;
+}
+
+.contact-details {
+  width: 41.66667%;
+}
+
+.download {
+  width: 58.33333%;
+  padding-top: 6px;
+}
+
+.main-col {
+  padding-right: 5%;
+}
+
+.download .button {
+  margin-top: 6px;
+  background: #444;
+}
+
+.download .button:hover {
+  background: #fff;
+  color: #2b2b2b;
+}
+
+.download .button i {
+  margin-right: 15px;
+  font-size: 20px;
+}

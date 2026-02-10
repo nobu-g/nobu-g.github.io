@@ -1,4 +1,4 @@
-import style from "../styles/About.module.scss";
+import style from "../styles/About.module.css";
 import type { MainData } from "../types/resumeData";
 
 interface AboutProps {
