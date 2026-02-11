@@ -63,6 +63,7 @@ const Resume = ({ data }: ResumeProps) => {
                       width="16"
                       alt="Award Icon"
                       style={{
+                        display: "inline-block",
                         verticalAlign: "middle",
                         marginLeft: "1rem",
                         marginRight: ".5rem",
@@ -109,6 +110,7 @@ const Resume = ({ data }: ResumeProps) => {
                       width="16"
                       alt="Award Icon"
                       style={{
+                        display: "inline-block",
                         verticalAlign: "middle",
                         marginLeft: "1rem",
                         marginRight: ".5rem",
