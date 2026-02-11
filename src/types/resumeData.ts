@@ -59,17 +59,11 @@ export interface Honor {
   resource: Record<string, string>;
 }
 
-export interface Skill {
-  name: string;
-  level: string;
-}
-
 export interface ResumeSection {
   education: Education[];
   publications: Record<string, Publication[]>;
   experience: Record<string, Experience[]>;
   honors: Honor[];
-  skills: Skill[];
 }
 
 export interface Project {

@@ -383,16 +383,6 @@
           "code": "https://github.com/upura/yans2021-hackathon"
         }
       }
-    ],
-    "skills": [
-      {
-        "name": "Git",
-        "level": "70%"
-      },
-      {
-        "name": "Python",
-        "level": "90%"
-      }
     ]
   },
   "portfolio": {
