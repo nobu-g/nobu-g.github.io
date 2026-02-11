@@ -4,13 +4,33 @@
   Keep this file focused on shared primitives only.
 ===================================================================== */
 
-/* Font variables shared across the app. */
-.font-root {
+/* Shared design tokens. */
+:root {
   --font-open-sans: "Open Sans";
   --font-noto-sans-jp: "Noto Sans JP";
   --font-libre-baskerville: "Libre Baskerville";
   --font-sans: var(--font-open-sans), var(--font-noto-sans-jp), sans-serif;
   --font-serif: var(--font-libre-baskerville), serif;
+  --color-body-bg: #0f0f0f;
+  --color-body-text: #838c95;
+  --color-heading: #313131;
+  --color-accent: #11abb0;
+  --color-accent-strong: #0f9095;
+  --color-link-hover: #313131;
+  --color-hr: #e3e3e3;
+  --color-button-hover: #3d4145;
+  --color-nav-active: #f06000;
+  --color-nav-opaque: #333;
+  --color-mobile-toggle-bg: #cc5200;
+  --color-mobile-nav-bg: #1f2024;
+  --color-mobile-nav-divider: #2d2e34;
+  --color-surface-light: #ebeeee;
+  --color-footer-text: #303030;
+  --color-footer-link: #525252;
+  --color-footer-bullet: #095153;
+}
+
+.font-root {
   font-family: var(--font-sans);
 }
 
@@ -34,8 +54,8 @@ html {
 }
 
 body {
-  background: #fff;
-  color: #838c95;
+  background: var(--color-body-bg);
+  color: var(--color-body-text);
   font-family: var(--font-sans, sans-serif);
   font-size: 1.5rem;
   font-weight: 400;
@@ -68,7 +88,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 1.2rem;
-  color: #313131;
+  color: var(--color-heading);
   font-family: var(--font-sans);
   font-weight: 700;
 }
@@ -81,7 +101,7 @@ h1 {
 }
 
 h1 span {
-  border-bottom: 3px solid #11abb0;
+  border-bottom: 3px solid var(--color-accent);
   padding-bottom: 6px;
 }
 
@@ -133,7 +153,7 @@ b {
 
 a,
 a:visited {
-  color: #11abb0;
+  color: var(--color-accent);
   outline: 0;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
@@ -141,13 +161,13 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: #313131;
+  color: var(--color-link-hover);
 }
 
 hr {
   height: 0;
   margin: 1.1rem 0 3rem;
-  border: solid #e3e3e3;
+  border: solid var(--color-hr);
   border-width: 1px 0 0;
   clear: both;
 }
@@ -185,7 +205,7 @@ input[type="button"] {
   padding: 1.2rem 2rem;
   border: 0;
   border-radius: 3px;
-  background: #11abb0;
+  background: var(--color-accent);
   color: #fff;
   cursor: pointer;
   font: 700 1.6rem / 3rem var(--font-sans);
@@ -204,7 +224,7 @@ input[type="reset"]:hover,
 input[type="reset"]:active,
 input[type="button"]:hover,
 input[type="button"]:active {
-  background: #3d4145;
+  background: var(--color-button-hover);
   color: #fff;
 }
 

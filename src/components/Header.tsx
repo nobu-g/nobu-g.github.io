@@ -43,22 +43,22 @@ const Header = ({ data, section, opaque }: HeaderProps) => {
         </a>
 
         <ul id="nav" className={style.nav}>
-          <li className={section === "home" ? "current" : ""}>
+          <li className={section === "home" ? style.current : ""}>
             <a className="smoothscroll" href="#home">
               Home
             </a>
           </li>
-          <li className={section === "about" ? "current" : ""}>
+          <li className={section === "about" ? style.current : ""}>
             <a className="smoothscroll" href="#about">
               About
             </a>
           </li>
-          <li className={section === "resume" ? "current" : ""}>
+          <li className={section === "resume" ? style.current : ""}>
             <a className="smoothscroll" href="#resume">
               Resume
             </a>
           </li>
-          <li className={section === "portfolio" ? "current" : ""}>
+          <li className={section === "portfolio" ? style.current : ""}>
             <a className="smoothscroll" href="#portfolio">
               Works
             </a>

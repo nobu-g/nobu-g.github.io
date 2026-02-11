@@ -62,12 +62,7 @@ const Resume = ({ data }: ResumeProps) => {
                       height="16"
                       width="16"
                       alt="Award Icon"
-                      style={{
-                        display: "inline-block",
-                        verticalAlign: "middle",
-                        marginLeft: "1rem",
-                        marginRight: ".5rem",
-                      }}
+                      className={style.awardIcon}
                     />
                     <span>{item.award.name}</span>
                   </>
@@ -109,12 +104,7 @@ const Resume = ({ data }: ResumeProps) => {
                       height="16"
                       width="16"
                       alt="Award Icon"
-                      style={{
-                        display: "inline-block",
-                        verticalAlign: "middle",
-                        marginLeft: "1rem",
-                        marginRight: ".5rem",
-                      }}
+                      className={style.awardIcon}
                     />
                     <span>{item.award.name}</span>
                   </>

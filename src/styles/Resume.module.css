@@ -24,12 +24,17 @@
 }
 
 .education,
-.work,
 .publication,
 .experience {
   margin-bottom: 48px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e8e8e8;
+}
+
+.honors {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 .education .info {
@@ -66,4 +71,11 @@
 
 .experience h3 {
   text-transform: capitalize;
+}
+
+.awardIcon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
 }

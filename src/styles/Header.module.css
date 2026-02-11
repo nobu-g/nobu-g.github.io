@@ -9,7 +9,6 @@
   width: 100%;
   background: #161415 url(/images/header-background.jpg) no-repeat top center;
   background-size: cover;
-  -webkit-background-size: cover;
   text-align: center;
   overflow: hidden;
 }
@@ -98,9 +97,6 @@
   display: block;
   font-size: 6rem;
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.8));
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -134,7 +130,7 @@
 }
 
 .opaque {
-  background-color: #333;
+  background-color: var(--color-nav-opaque);
 }
 
 /* hide toggle button */
@@ -163,13 +159,110 @@
   text-decoration: none;
   text-align: left;
   color: #fff;
-  -webkit-transition: color 0.2s ease-in-out;
-  -moz-transition: color 0.2s ease-in-out;
-  -o-transition: color 0.2s ease-in-out;
-  -ms-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
 
 .nav li a:active {
   background-color: transparent;
+}
+
+.nav li.current a {
+  color: var(--color-nav-active);
+}
+
+@media only screen and (max-width: 900px) {
+  .nav-wrap {
+    font: 11px var(--font-sans);
+    letter-spacing: 1.5px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-wrap {
+    font: 12px var(--font-sans);
+    background: transparent;
+    letter-spacing: 1.5px;
+    width: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  .nav-wrap > .mobile-btn {
+    width: 48px;
+    height: 48px;
+    text-align: left;
+    background-color: var(--color-mobile-toggle-bg);
+    position: relative;
+    border: none;
+    float: right;
+    font-size: 0;
+    line-height: 0;
+    text-shadow: none;
+    color: transparent;
+    top: 0;
+    right: 30px;
+  }
+
+  .nav-wrap > .mobile-btn:before,
+  .nav-wrap > .mobile-btn:after {
+    position: absolute;
+    border: 2px solid #fff;
+    top: 35%;
+    left: 25%;
+    right: 25%;
+    content: "";
+  }
+
+  .nav-wrap > .mobile-btn:after {
+    top: 60%;
+  }
+
+  .nav-wrap:not(:target) > .mobile-btn:first-of-type,
+  .nav-wrap:target > .mobile-btn:last-of-type {
+    display: block;
+  }
+
+  .nav-wrap > .nav {
+    height: auto;
+    display: none;
+    clear: both;
+    width: auto;
+    float: right;
+    position: relative;
+    top: 12px;
+    right: 0;
+  }
+
+  .nav-wrap:target > .nav {
+    display: block;
+    padding: 30px 20px 48px;
+    background: var(--color-mobile-nav-bg);
+    margin: 0 30px;
+    clear: both;
+  }
+
+  .nav li {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 4%;
+    text-align: left;
+    border-bottom: 1px dotted var(--color-mobile-nav-divider);
+  }
+
+  .nav li a {
+    display: block;
+    margin: 12px 0;
+    padding: 0;
+    line-height: 16px;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav-wrap > .nav {
+    width: auto;
+    float: none;
+  }
 }

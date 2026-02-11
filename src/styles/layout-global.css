@@ -2,17 +2,9 @@
    Global layout styles used by currently rendered non-module sections.
    ================================================================== */
 
-body {
-  background: #0f0f0f;
-}
-
-ul#nav li.current a {
-  color: #f06000;
-}
-
 /* portfolio */
 #portfolio {
-  background: #ebeeee;
+  background: var(--color-surface-light);
   padding-top: 90px;
   padding-bottom: 60px;
 }
@@ -100,14 +92,14 @@ footer {
   position: relative;
   margin-bottom: 48px;
   padding-top: 48px;
-  color: #303030;
+  color: var(--color-footer-text);
   font-size: 14px;
   text-align: center;
 }
 
 footer a,
 footer a:visited {
-  color: #525252;
+  color: var(--color-footer-link);
 }
 
 footer a:hover,
@@ -127,15 +119,11 @@ footer .copyright li {
   line-height: 24px;
 }
 
-.ie footer .copyright li {
-  display: inline;
-}
-
 footer .copyright li:before {
   content: "\2022";
   padding-right: 10px;
   padding-left: 10px;
-  color: #095153;
+  color: var(--color-footer-bullet);
 }
 
 footer .copyright li:first-child:before {
@@ -175,7 +163,7 @@ footer .social-links li:first-child {
   height: 60px;
   border: 0;
   border-radius: 100%;
-  background-color: #525252;
+  background-color: var(--color-footer-link);
   color: #fff;
   font-size: 21px;
   line-height: 1;
@@ -184,5 +172,5 @@ footer .social-links li:first-child {
 }
 
 #go-top a:hover {
-  background-color: #0f9095;
+  background-color: var(--color-accent-strong);
 }
