@@ -34,7 +34,7 @@ const Resume = ({ data }: ResumeProps) => {
           <p className={style.info}>
             <span className={style.degree}>{education.degree}</span>
             <span>&bull;</span>
-            <em className={style.date}>{education.graduated}</em>
+            <span className={style.date}>{education.graduated}</span>
             <br />
             {education.description}
           </p>
@@ -86,7 +86,7 @@ const Resume = ({ data }: ResumeProps) => {
               <p className={style.info}>
                 {item.place}
                 <span>&bull;</span>
-                <em className={style.date}>{item.years}</em>
+                <span className={style.date}>{item.years}</span>
                 <br />
                 {item.description ? (
                   <>
@@ -123,7 +123,7 @@ const Resume = ({ data }: ResumeProps) => {
         <div key={honor.name}>
           <h3>{honor.name}</h3>
           <p className={style.info}>
-            <em className={style.date}>{honor.years}</em>
+            <span className={style.date}>{honor.years}</span>
             <br />
             {Object.entries(honor.resource).map(([kind, url]) => (
               <span key={kind}>[{url ? <a href={url}>{kind}</a> : kind}]</span>
