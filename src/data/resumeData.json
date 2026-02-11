@@ -135,6 +135,15 @@
       ],
       "Domestic Conferences": [
         {
+          "author": "植田 暢大, 董 于洋, Krisztián Boros, 伊藤 大輝, 世良 拓也, 小山田 昌史",
+          "title": "テキストおよび画像を用いた検索拡張生成のための意味的文書レイアウト解析",
+          "misc": "言語処理学会 第32回年次大会, 宇都宮, (2026.3).",
+          "resource": {
+            "paper": "https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/C4-7.pdf",
+            "poster": "/pub/NLP2026_poster.pdf"
+          }
+        },
+        {
           "author": "稲積 駿, 植田 暢大, 吉野 幸一郎",
           "title": "実世界対話における参照関係の統合的解析",
           "misc": "言語処理学会 第31回年次大会, 長崎, (2025.3).",
