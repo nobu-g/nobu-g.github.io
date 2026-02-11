@@ -42,3 +42,17 @@
 .main-col {
   padding-right: 5%;
 }
+
+@media only screen and (max-width: 767px) {
+  .profile-pic {
+    margin: 0 auto 20px;
+  }
+
+  .contact-details {
+    width: 100%;
+  }
+
+  .main-col {
+    padding-right: 0;
+  }
+}

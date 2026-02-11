@@ -32,10 +32,12 @@ const Resume = ({ data }: ResumeProps) => {
         <div key={education.school}>
           <h3 className={style.h3}>{education.school}</h3>
           <p className={style.info}>
-            {education.degree} <span>&bull;</span>
+            <span className={style.degree}>{education.degree}</span>
+            <span>&bull;</span>
             <em className={style.date}>{education.graduated}</em>
+            <br />
+            {education.description}
           </p>
-          <p>{education.description}</p>
         </div>
       );
     });
@@ -47,7 +49,7 @@ const Resume = ({ data }: ResumeProps) => {
           {items.map((item) => (
             <li key={item.title}>
               <h4>{item.title}</h4>
-              <p>
+              <p className={style.info}>
                 <Author author={item.author} />
                 <br />
                 {item.misc}
@@ -142,7 +144,7 @@ const Resume = ({ data }: ResumeProps) => {
         </div>
 
         <div className={`nine columns ${style["main-col"]}`}>
-          <div className="row item">
+          <div className={`row item ${style.itemRow}`}>
             <div className="twelve columns">{education}</div>
           </div>
         </div>
@@ -156,7 +158,7 @@ const Resume = ({ data }: ResumeProps) => {
         </div>
 
         <div className={`nine columns ${style["main-col"]}`}>
-          <div className="row item">
+          <div className={`row item ${style.itemRow}`}>
             <div className="twelve columns">{publications}</div>
           </div>
         </div>

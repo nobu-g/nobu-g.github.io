@@ -38,7 +38,6 @@
   font: 90px / 1.1em var(--font-sans);
   font-weight: bold;
   color: #fff;
-  letter-spacing: -2px;
   margin: 0 auto 18px auto;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
@@ -112,7 +111,6 @@
   font-weight: bold;
   width: 100%;
   text-transform: uppercase;
-  letter-spacing: 3px;
   margin: 0 auto;
   z-index: 100;
   position: fixed;
@@ -173,15 +171,40 @@
 @media only screen and (max-width: 900px) {
   .nav-wrap {
     font: 11px var(--font-sans);
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
   }
 }
 
 @media only screen and (max-width: 767px) {
+  .banner {
+    width: 92%;
+    padding-bottom: 20px;
+  }
+
+  .banner-text h1 {
+    font-size: clamp(3.2rem, 10vw, 4.4rem);
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+
+  .banner-text h3 {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.8;
+  }
+
+  .social {
+    font-size: 2.2rem;
+    margin: 18px 0;
+  }
+
+  .social li {
+    margin: 0 10px;
+  }
+
   .nav-wrap {
     font: 12px var(--font-sans);
     background: transparent;
-    letter-spacing: 1.5px;
     width: auto;
     position: fixed;
     top: 0;
@@ -201,7 +224,7 @@
     text-shadow: none;
     color: transparent;
     top: 0;
-    right: 30px;
+    right: 12px;
   }
 
   .nav-wrap > .mobile-btn:before,
@@ -238,7 +261,7 @@
     display: block;
     padding: 30px 20px 48px;
     background: var(--color-mobile-nav-bg);
-    margin: 0 30px;
+    margin: 0 12px;
     clear: both;
   }
 
@@ -261,6 +284,20 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .banner {
+    width: 94%;
+  }
+
+  .banner-text h1 {
+    font-size: clamp(2.8rem, 9.5vw, 3.8rem);
+    line-height: 1.18;
+  }
+
+  .banner-text h3 {
+    font-size: 1.4rem;
+    line-height: 1.7;
+  }
+
   .nav-wrap > .nav {
     width: auto;
     float: none;

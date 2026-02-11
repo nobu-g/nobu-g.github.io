@@ -9,10 +9,6 @@
 }
 
 @media only screen and (max-width: 767px) {
-  #resume h1 {
-    letter-spacing: 3px;
-  }
-
   #portfolio-wrapper .columns {
     margin-bottom: 40px;
   }
