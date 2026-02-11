@@ -10,7 +10,8 @@
 }
 
 .h3 {
-  font: 25px / 30px var(--font-sans);
+  font-family: var(--font-sans);
+  font-size: 25px;
   font-weight: bold;
   text-align: left;
 }
@@ -39,7 +40,8 @@
 }
 
 .degree {
-  font: 16px / 24px var(--font-serif);
+  font-family: var(--font-serif);
+  font-size: 16px;
   font-style: italic;
   color: #6e7881;
   margin-bottom: 18px;
@@ -47,17 +49,19 @@
 }
 
 .date {
-  font: 15px / 24px var(--font-sans);
+  font-family: var(--font-sans);
+  font-size: 15px;
   margin-top: 6px;
 }
 
 .publication h3 {
-  font: 25px / 30px var(--font-sans);
+  font-family: var(--font-sans);
+  font-size: 25px;
   font-weight: 700;
 }
 
 .publication p {
-  line-height: 1.5em;
+  line-height: 1.7;
 }
 
 .experience h4 {
@@ -96,16 +100,13 @@
 
   .h3 {
     font-size: 2rem;
-    line-height: 1.35;
   }
 
   .publication h3 {
     font-size: 2rem;
-    line-height: 1.35;
   }
 
   .experience h4 {
     font-size: 1.7rem;
-    line-height: 1.4;
   }
 }

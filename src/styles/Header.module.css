@@ -35,7 +35,7 @@
 }
 
 .banner-text h1 {
-  font: 90px / 1.1em var(--font-sans);
+  font: 90px / 1.15 var(--font-sans);
   font-weight: bold;
   color: #fff;
   margin: 0 auto 18px auto;
@@ -43,7 +43,7 @@
 }
 
 .banner-text h3 {
-  font: 18px / 1.9em var(--font-serif);
+  font: 18px / 1.7 var(--font-serif);
   color: #a8a8a8;
   margin: 0 auto;
   width: 70%;
@@ -183,14 +183,12 @@
 
   .banner-text h1 {
     font-size: clamp(3.2rem, 10vw, 4.4rem);
-    line-height: 1.15;
     margin-bottom: 12px;
   }
 
   .banner-text h3 {
     width: 100%;
     font-size: 1.5rem;
-    line-height: 1.8;
   }
 
   .social {
@@ -278,7 +276,6 @@
     display: block;
     margin: 12px 0;
     padding: 0;
-    line-height: 16px;
     border: none;
   }
 }
@@ -295,7 +292,7 @@
 
   .banner-text h3 {
     font-size: 1.4rem;
-    line-height: 1.7;
+    line-height: 1.65;
   }
 
   .nav-wrap > .nav {

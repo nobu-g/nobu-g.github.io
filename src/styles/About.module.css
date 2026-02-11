@@ -20,14 +20,15 @@
 }
 
 .about h2 {
-  font: 22px / 30px var(--font-sans);
+  font-family: var(--font-sans);
+  font-size: 22px;
   font-weight: bold;
   color: #fff;
   margin-bottom: 12px;
 }
 
 .about p {
-  line-height: 30px;
+  line-height: 1.8;
   color: #7a7a7a;
 }
 

@@ -116,7 +116,6 @@ footer .copyright li {
   display: inline-block;
   margin: 0;
   padding: 0;
-  line-height: 24px;
 }
 
 footer .copyright li:before {
@@ -166,7 +165,6 @@ footer .social-links li:first-child {
   background-color: var(--color-footer-link);
   color: #fff;
   font-size: 21px;
-  line-height: 1;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
