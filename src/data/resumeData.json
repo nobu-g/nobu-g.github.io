@@ -55,6 +55,15 @@
     "publications": {
       "International Conferences and Workshops (Peer-reviewed)": [
         {
+          "author": "Nobuhiro Ueda, Yuyang Dong, Krisztián Boros, Daiki Ito, Takuya Sera, Masafumi Oyamada",
+          "title": "SCAN: Semantic Document Layout Analysis for Textual and Visual Retrieval-Augmented Generation",
+          "misc": "Findings of the Association for Computational Linguistics: EACL 2026, Rabat, Morocco, (2026.3).",
+          "resource": {
+            "paper": "https://aclanthology.org/2026.findings-eacl.82.pdf",
+            "poster": "/pub/EACL2026_poster.pdf"
+          }
+        },
+        {
           "author": "Shun Inadumi, Nobuhiro Ueda, Koichiro Yoshino",
           "title": "Disambiguating Reference in Visually Grounded Dialogues through Joint Modeling of Textual and Multimodal Semantic Structures",
           "misc": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025), Vienna, Austria, (2025.7).",

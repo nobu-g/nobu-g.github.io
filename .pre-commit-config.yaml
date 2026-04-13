@@ -7,6 +7,7 @@ repos:
       - id: check-yaml
       - id: check-json
       - id: check-added-large-files
+        exclude: "public/pub/.*"
       - id: check-case-conflict
       - id: check-merge-conflict
       - id: mixed-line-ending
