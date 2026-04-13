@@ -2,91 +2,6 @@
    Global layout styles used by currently rendered non-module sections.
    ================================================================== */
 
-/* portfolio */
-#portfolio {
-  background: var(--color-surface-light);
-  padding-top: 90px;
-  padding-bottom: 60px;
-}
-
-#portfolio h1 {
-  margin-bottom: 48px;
-  color: #95a3a3;
-  font: 15px / 24px var(--font-sans);
-  letter-spacing: 1px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-#portfolio-wrapper .columns {
-  margin-bottom: 36px;
-}
-
-.portfolio-item .item-wrap {
-  position: relative;
-  overflow: hidden;
-  background: #fff;
-  transition: all 0.3s ease-in-out;
-}
-
-.portfolio-item .item-wrap a {
-  display: block;
-  cursor: pointer;
-}
-
-.portfolio-item .item-wrap .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  background: url(/images/overlay-bg.png) repeat;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.portfolio-item .item-wrap .link-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin-top: -15px;
-  margin-left: -15px;
-  color: #fff;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.portfolio-item .item-wrap img {
-  vertical-align: bottom;
-}
-
-.portfolio-item .portfolio-item-meta {
-  padding: 18px;
-}
-
-.portfolio-item .portfolio-item-meta h5 {
-  margin-bottom: 0;
-  color: #fff;
-  font: 700 14px / 21px var(--font-sans);
-}
-
-.portfolio-item .portfolio-item-meta p {
-  margin-bottom: 0;
-  color: #c6c7c7;
-  font: 12px / 18px var(--font-sans);
-}
-
-.portfolio-item:hover .overlay,
-.portfolio-item:hover .link-icon {
-  opacity: 1;
-}
-
 /* footer */
 footer {
   position: relative;
@@ -171,4 +86,89 @@ footer .social-links li:first-child {
 
 #go-top a:hover {
   background-color: var(--color-accent-strong);
+}
+
+/* portfolio */
+#portfolio {
+  background: var(--color-surface-light);
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+#portfolio h1 {
+  margin-bottom: 48px;
+  color: #95a3a3;
+  font: 15px / 24px var(--font-sans);
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#portfolio-wrapper .columns {
+  margin-bottom: 36px;
+}
+
+.portfolio-item .item-wrap {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio-item .item-wrap a {
+  display: block;
+  cursor: pointer;
+}
+
+.portfolio-item .item-wrap .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: url(/images/overlay-bg.png) repeat;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-item .item-wrap .link-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  margin-left: -15px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-item .item-wrap img {
+  vertical-align: bottom;
+}
+
+.portfolio-item .portfolio-item-meta {
+  padding: 18px;
+}
+
+.portfolio-item .portfolio-item-meta h5 {
+  margin-bottom: 0;
+  color: #fff;
+  font: 700 14px / 21px var(--font-sans);
+}
+
+.portfolio-item .portfolio-item-meta p {
+  margin-bottom: 0;
+  color: #c6c7c7;
+  font: 12px / 18px var(--font-sans);
+}
+
+.portfolio-item:hover .overlay,
+.portfolio-item:hover .link-icon {
+  opacity: 1;
 }
