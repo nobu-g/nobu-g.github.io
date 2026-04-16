@@ -29,34 +29,24 @@ const About = ({ data }: AboutProps) => {
           <h2>About Me</h2>
 
           <p>
-            I am a researcher at the Data Science Laboratory, NEC Corporation, Japan. I&apos;m
-            interested in how we can make computers understand natural language. Previously, I was
-            working on a research about anaphora resolution in Japanese. Try{" "}
-            <a
-              href="https://lotus.kuee.kyoto-u.ac.jp/cohesion-analysis/pub/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              our Japanese anaphora resolution demo
-            </a>
-            .
+            I am a researcher at the Knowledge Science Research Laboratories, NEC Corporation,
+            Japan. I&apos;m interested in how we can make computers understand natural language.
+            Previously, I was working on a research about anaphora resolution in Japanese.
           </p>
-          <div className="row">
-            <div className={`columns ${style["contact-details"]}`}>
-              <h2>Contact Details</h2>
-              <p className="address">
-                <span>{name}</span>
+          <div className={style["contact-details"]}>
+            <h2>Contact Details</h2>
+            <p className="address">
+              <span>{name}</span>
+              <br />
+              <span>
+                NEC Tamagawa Office, NEC Corporation
                 <br />
-                <span>
-                  NEC Tamagawa Office, NEC Corporation
-                  <br />
-                  Nakahara-ku Shimonumabe 1753, Kawasaki, Kanagawa, 211-0011, Japan
-                </span>
-                <br />
-                {/*<span>{phone}</span><br/>*/}
-                <span>{email}</span>
-              </p>
-            </div>
+                Nakahara-ku Shimonumabe 1753, Kawasaki, Kanagawa, 211-0011, Japan
+              </span>
+              <br />
+              {/*<span>{phone}</span><br/>*/}
+              <span>{email}</span>
+            </p>
           </div>
         </div>
       </div>
