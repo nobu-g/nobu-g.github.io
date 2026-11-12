@@ -3,49 +3,49 @@ name: gh-pages
 on:
   push:
     branches:
-    - main
+      - main
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v6
+      - uses: actions/checkout@v6
 
-    - name: setup node
-      uses: actions/setup-node@v6
-      with:
-        node-version: '24'
+      - name: setup node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "26"
 
-    - name: Cache dependencies
-      uses: actions/cache@v5
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
+      - name: Cache dependencies
+        uses: actions/cache@v5
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
-    - name: install
-      run: npm ci
+      - name: install
+        run: npm ci
 
-    - name: lint
-      run: npx @biomejs/biome ci .
+      - name: lint
+        run: npx @biomejs/biome ci .
 
-    # Vite でアプリをビルドする
-    # プロジェクトルート直下に dist ディレクトリができる
-    - name: build
-      run: npm run build
-      env:
-        VITE_GA_ID: ${{ secrets.VITE_GA_ID }}
+      # Vite でアプリをビルドする
+      # プロジェクトルート直下に dist ディレクトリができる
+      - name: build
+        run: npm run build
+        env:
+          VITE_GA_ID: ${{ secrets.VITE_GA_ID }}
 
-    # GitHub Pages の仕様として_から始まるディレクトリが見えず 404 となる
-    # これを回避するために.nojekyll ファイルを dist ディレクトリに作る
-    - name: add nojekyll
-      run: touch ./dist/.nojekyll
+      # GitHub Pages の仕様として_から始まるディレクトリが見えず 404 となる
+      # これを回避するために.nojekyll ファイルを dist ディレクトリに作る
+      - name: add nojekyll
+        run: touch ./dist/.nojekyll
 
-    # gh-pages ブランチに dist ディレクトリの中身をプッシュする
-    # gh-pages ブランチは自動的に作成される
-    - name: deploy
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
+      # gh-pages ブランチに dist ディレクトリの中身をプッシュする
+      # gh-pages ブランチは自動的に作成される
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
